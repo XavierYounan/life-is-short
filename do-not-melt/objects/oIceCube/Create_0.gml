@@ -1,19 +1,14 @@
-vMove = 0
 hsp = 0;
 vsp = 0;
-hMove_fraction = 0;
-vMove_fraction = 0;
-
+hsp_fraction = 0;
+vsp_fraction = 0;
 
 grv = 480;
 walksp = 240;
 jump_speed = 400;
-maxVsp = grv
-
-m_imputLog = []
 
 
-//Eventaully add a enum
+//Eventaully add finite state machiene
 playerState = 0
 
 
@@ -32,15 +27,15 @@ for (var i=0; i<array_length_1d(all_layers); i++)
       if (layer_get_element_type(this_element) == layerelementtype_tilemap) 
 	  {
         var tmap = this_element;
-		if  (tilemap_get_tileset(tmap) == tCollision)
+		if  (tilemap_get_tileset(tmap) == tsCollision)
 		{
 			tilemap = tmap	
-			show_debug_message("Collision Tilemap found!")
+			//show_debug_message("Collision Tilemap found!")
 		}
     
         if(tmap == -1) 
 		{
-            debug_log("Tilemap not found, tilemap: " + string(tmap) + " layerId: " + string(this_layer) + " layerName: " + layer_get_name(this_layer), ERROR_LEVEL.WARNING)
+            //debug_log("Tilemap not found, tilemap: " + string(tmap) + " layerId: " + string(this_layer) + " layerName: " + layer_get_name(this_layer), ERROR_LEVEL.WARNING)
         }
       }
     }

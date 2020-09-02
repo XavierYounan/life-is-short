@@ -1,6 +1,7 @@
 ///@description Build height table then start game
 
 draw_tilemap(tilemapid,0,0);
+global.heightsFromTop[heightsToGet - 1] = 0; // Predefine  the last element in the array to reserve space
 
 for (var i = heightsToGet-1; i >= 0; i--) //(x,y) = (0,0) is first point
 {
