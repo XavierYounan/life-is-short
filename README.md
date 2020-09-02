@@ -1,1 +1,1 @@
-# do-not-melt
+# life is short
