@@ -1,11 +1,15 @@
-hsp = 0;
-vsp = 0;
-hsp_fraction = 0;
-vsp_fraction = 0;
+hsp = 0; // pixels per seccond
+vsp = 0; // Pixels per seccond
 
-grv = 32;
-walksp = 32;
-jump_speed = 32;
+hMove = 0; //Pixels this frame
+vMove = 0; //Pixels this frame
+
+hMoveFrac = 0; // Pixels rounded last frame
+vMoveFrac = 0;  // Pixels rounded last frame
+
+walksp = 200; // Pixels per seccond
+grv = 10; // Pixels per seccond
+jump_speed = 400; // Pixels per seccond
 
 
 //Eventaully add finite state machiene
