@@ -56,7 +56,7 @@ if (p1 == 1) || (p2 == 1) //inside a tile with a collision
 	hsp = 0;
 }
 	
-x += hsp;
+x += hsp * global.dt_steady;
 
 //show_debug("Before vCol, x: {}, y: {}",x,y)
 
@@ -79,7 +79,7 @@ if (tilemap_get_at_pixel(tilemap,x,bbox_side+vsp) <=1)
 	}
 }
 
-y += vsp; 
+y += vsp * global.dt_steady; 
 
 if(vsp != 0)
 {

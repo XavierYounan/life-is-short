@@ -3,15 +3,13 @@ vsp = 0;
 hsp_fraction = 0;
 vsp_fraction = 0;
 
-grv = 480;
-walksp = 240;
-jump_speed = 400;
+grv = 32;
+walksp = 32;
+jump_speed = 32;
 
 
 //Eventaully add finite state machiene
 playerState = 0
-
-
 
 
 var all_layers = layer_get_all();
