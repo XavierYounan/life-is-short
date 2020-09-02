@@ -70,8 +70,11 @@ if (tilemap_get_at_pixel(tilemap,x,bbox_side+vMove) <=1)
 	p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vMove)
 	if (p1 == 1) || (p2 == 1)
 	{
-		if (vMove >= 0) y = y - (y mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_bottom - y);
-		else y = y - (y mod TILE_SIZE) - (bbox_top - y);
+		if (vMove >= 0){
+			y = y - (y mod TILE_SIZE) - (bbox_bottom - y) + (TILE_SIZE-1)
+		}else{
+			y = y - (y mod TILE_SIZE) - (bbox_top - y);
+		}
 		vMove = 0;
 		vsp = 0;
 	}
@@ -80,22 +83,18 @@ if (tilemap_get_at_pixel(tilemap,x,bbox_side+vMove) <=1)
 y += vMove; 
 
 
-
-
-
 var floorDist = InFloor(tilemap,x,bbox_bottom)
-
 if (floorDist >= 0)
 {
 	y -= floorDist + 1; 
 	vsp = 0;
 	floorDist = -1;
 }
+
 	
+
 #region Walk down slope, bounce protection
 	
-
-
 if(grounded)
 {
 	if(abs(floorDist) < 10) //snap limit of 10 if greater then obv not moving onto next tile
@@ -112,7 +111,6 @@ if(grounded)
 				//move there
 				var dis = InFloor(tilemap,x,bbox_bottom+1);
 				y += abs(dis)
-				//show_debug("Is grounded and end of tile, floorDist: {}, dis: {}, x: {}, y: {}", floorDist, dis, x, y)
 			}
 			
 		}

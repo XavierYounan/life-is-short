@@ -9,7 +9,7 @@ vMoveFrac = 0;  // Pixels rounded last frame
 
 walksp = 200; // Pixels per seccond
 grv = 10; // Pixels per seccond
-jump_speed = 400; // Pixels per seccond
+jump_speed = 440; // Pixels per seccond
 
 
 //Eventaully add finite state machiene

@@ -14,18 +14,6 @@ function InFloor(tilemap, x, y) {
 		var theFloor = global.heightsFromTop[(x mod TILE_SIZE) + (tileIndex * TILE_SIZE)]
 		return ((y mod TILE_SIZE) - theFloor);
 	} 
-	else //if pixel is not in a tile
-	{	
-		var distFromCurrentTile = -(TILE_SIZE - (y mod TILE_SIZE))
-		if (distFromCurrentTile = 0)
-		{
-			distFromCurrentTile = -32	
-		}
-		return distFromCurrentTile
-	}
-
-
-
-
+	else return -(TILE_SIZE - (y mod TILE_SIZE));
 
 }
