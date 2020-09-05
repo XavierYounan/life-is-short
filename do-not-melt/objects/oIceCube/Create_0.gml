@@ -15,8 +15,7 @@ jump_speed = 440; // Pixels per seccond
 //Eventaully add finite state machiene
 playerState = 0
 
-camera = instance_create_depth(x,y,height.camera,oCamera)
-camera.player = self;
+
 
 var all_layers = layer_get_all();
 
