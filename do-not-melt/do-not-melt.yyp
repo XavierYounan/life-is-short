@@ -1,13 +1,18 @@
 {
   "resources": [
+    {"id":{"name":"oStart","path":"objects/oStart/oStart.yy",},"order":2,},
+    {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},"order":0,},
     {"id":{"name":"InFloor","path":"scripts/InFloor/InFloor.yy",},"order":0,},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},"order":1,},
     {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":1,},
+    {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":3,},
     {"id":{"name":"pSun","path":"paths/pSun/pSun.yy",},"order":0,},
     {"id":{"name":"oDeltaTime","path":"objects/oDeltaTime/oDeltaTime.yy",},"order":0,},
+    {"id":{"name":"sFinish","path":"sprites/sFinish/sFinish.yy",},"order":1,},
     {"id":{"name":"LayerEnums","path":"scripts/LayerEnums/LayerEnums.yy",},"order":2,},
     {"id":{"name":"sSun","path":"sprites/sSun/sSun.yy",},"order":1,},
     {"id":{"name":"tsCollision","path":"tilesets/tsCollision/tsCollision.yy",},"order":1,},
+    {"id":{"name":"Respawn","path":"scripts/Respawn/Respawn.yy",},"order":0,},
     {"id":{"name":"sGrassBackground","path":"sprites/sGrassBackground/sGrassBackground.yy",},"order":0,},
     {"id":{"name":"rInit","path":"rooms/rInit/rInit.yy",},"order":1,},
     {"id":{"name":"tsGrass","path":"tilesets/tsGrass/tsGrass.yy",},"order":1,},
@@ -45,6 +50,9 @@
     {"folderPath":"folders/SteadyDeltaTime.yy","order":18,"resourceVersion":"1.0","name":"SteadyDeltaTime","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sun.yy","order":20,"resourceVersion":"1.0","name":"Sun","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Camera.yy","order":21,"resourceVersion":"1.0","name":"Camera","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Level Managment.yy","order":22,"resourceVersion":"1.0","name":"Level Managment","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Level Managment/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Level Managment/Scripts.yy","order":4,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
