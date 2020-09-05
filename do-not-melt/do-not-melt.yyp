@@ -4,7 +4,7 @@
     {"id":{"name":"sStart","path":"sprites/sStart/sStart.yy",},"order":0,},
     {"id":{"name":"InFloor","path":"scripts/InFloor/InFloor.yy",},"order":0,},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},"order":1,},
-    {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":1,},
+    {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":0,},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":3,},
     {"id":{"name":"pSun","path":"paths/pSun/pSun.yy",},"order":0,},
     {"id":{"name":"oDeltaTime","path":"objects/oDeltaTime/oDeltaTime.yy",},"order":0,},
@@ -53,6 +53,7 @@
     {"folderPath":"folders/Level Managment.yy","order":22,"resourceVersion":"1.0","name":"Level Managment","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Level Managment/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Level Managment/Scripts.yy","order":4,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/IceCube/Sprites.yy","order":3,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

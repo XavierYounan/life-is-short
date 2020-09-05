@@ -16,6 +16,16 @@ jump_speed = 440; // Pixels per seccond
 playerState = 0
 
 
+//shrink
+initialSize = 32
+size = initialSize;
+
+dissappearTime = 200 //200 secconds
+shrinkRate = initialSize/dissappearTime// pixels per seccond
+sizeFrac = 0;
+
+lastSize = 32;
+
 
 var all_layers = layer_get_all();
 

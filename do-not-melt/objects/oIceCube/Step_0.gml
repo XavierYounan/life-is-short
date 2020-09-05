@@ -7,6 +7,23 @@ key_left = keyboard_check(vk_left);
 key_up = keyboard_check(vk_up);
 //key_down = keyboard_check(vk_down);
 
+//shrink
+size -= sizeFrac;//Re apply sizeFrac
+size -= global.dt_steady * shrinkRate //Apply this frames shrink amount
+
+//Find size ratio
+sizeRatio = size/initialSize;
+image_xscale = sizeRatio;
+image_yscale = sizeRatio;
+
+sizeFrac = ceil(size) - size; // Find amount needed to round size up
+size += sizeFrac; //round size up
+
+if(size != lastSize){
+	//Create water particles
+	lastSize = size;
+}
+
 //Calculate Movement
 move = (key_right - key_left) * walksp
 hsp = move;
