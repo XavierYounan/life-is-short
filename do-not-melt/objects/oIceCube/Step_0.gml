@@ -20,7 +20,10 @@ sizeFrac = ceil(size) - size; // Find amount needed to round size up
 size += sizeFrac; //round size up
 
 if(size != lastSize){
-	//Create water particles
+	
+	instance_create_depth(x,y,height.decor,oWaterParticle)
+		
+	
 	lastSize = size;
 	
 	//Check if not too small
