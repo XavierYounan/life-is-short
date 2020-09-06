@@ -19,12 +19,14 @@ playerState = 0
 //shrink
 initialSize = 32
 size = initialSize;
+deathSize = 5;
 
 dissappearTime = 200 //200 secconds
-shrinkRate = initialSize/dissappearTime// pixels per seccond
+shrinkRate = (initialSize-deathSize)/dissappearTime// pixels per seccond
 sizeFrac = 0;
 
 lastSize = 32;
+
 
 
 var all_layers = layer_get_all();

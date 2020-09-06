@@ -22,6 +22,14 @@ size += sizeFrac; //round size up
 if(size != lastSize){
 	//Create water particles
 	lastSize = size;
+	
+	//Check if not too small
+	if(size < deathSize){
+		instance_destroy(self);
+		with(oStart){
+			Respawn(camera);	
+		}	
+	}
 }
 
 //Calculate Movement
