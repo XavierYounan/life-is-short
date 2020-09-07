@@ -18,6 +18,7 @@ vMoveFrac = vMove - (floor(abs(vMove)) * sign(vMove));
 vMove -= vMoveFrac;
 
 //Horisontal collision
+/*
 //Check collision with other particles first
 for(var i=1; i<hMove; i++){
 	var instance = instance_place(x + i * sign(hMove),y,oWaterParticle)
@@ -29,6 +30,7 @@ for(var i=1; i<hMove; i++){
 		break;
 	}
 }
+*/
 
 
 var bbox_side = hMove>0 ? bbox_right : bbox_left;
@@ -49,6 +51,7 @@ if (p1 == 1) || (p2 == 1) //inside a tile with a collision
 x += hMove ;
 
 //Vertical Collision
+/*
 //Check collision with other water particls first
 for(var i=1; i<vMove; i++){
 	var instance = instance_place(x ,y + i * sign(hMove) ,oWaterParticle)
@@ -62,6 +65,7 @@ for(var i=1; i<vMove; i++){
 		}
 	}
 }
+*/
 
 
 if (vMove >= 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
