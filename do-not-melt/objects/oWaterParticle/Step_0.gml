@@ -1,49 +1,79 @@
-///Ball "physics"
+vsp += grv; //add gravity
 
-/* Create event of water particle to put in oIceCube
-var pd = point_direction(mouse_x, mouse_y, x, y);
-var dis = point_distance(mouse_x, mouse_y, x, y);
+//Calculate number of pixels moved this frame
+hMove = hsp * global.dt_steady;
+vMove = vsp * global.dt_steady;
 
-hsp = lengthdir_x(dis / 10, pd);
-vsp = lengthdir_y(dis / 10, pd);
+//Re apply fractions
+hMove += hMoveFrac;
+vMove += vMoveFrac;
+
+//Store and Remove fractions
+//Important: go into collision with whole integers ONLY!
+hMoveFrac = hMove - (floor(abs(hMove)) * sign(hMove));
+hMove -= hMoveFrac;
+
+vMoveFrac = vMove - (floor(abs(vMove)) * sign(vMove));
+vMove -= vMoveFrac;
+
+
+//Horisontal collision
+var bbox_side = hMove>0 ? bbox_right : bbox_left;
+
+var p1 = tilemap_get_at_pixel(tilemap,bbox_side+hMove,bbox_top);
+var p2 = tilemap_get_at_pixel(tilemap,bbox_side+hMove,bbox_bottom);
+
+if(tilemap_get_at_pixel(tilemap,x,bbox_bottom+1) > 1) p2 = 0; //if on a slope ignore collision
+
+if (p1 == 1) || (p2 == 1) //inside a tile with a collision
+{
+	if (hMove > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right - x);
+	else x = x - (x mod TILE_SIZE) - (bbox_left - x);
+	hMove = 0;
+	hsp = 0;
+}
+	
+x += hMove ;
+
+//Vertical Collision
+if (vMove >= 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
+if (tilemap_get_at_pixel(tilemap,x,bbox_side+vMove) <=1)
+{
+	p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vMove) 
+	p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vMove)
+	if (p1 == 1) || (p2 == 1)
+	{
+		if (vMove >= 0){
+			y = y - (y mod TILE_SIZE) - (bbox_bottom - y) + (TILE_SIZE-1)
+		}else{
+			y = y - (y mod TILE_SIZE) - (bbox_top - y);
+		}
+		vMove = 0;
+		vsp = 0;
+	}
+}
+
+y += vMove; 
+
+
+var floorDist = InFloor(tilemap,x,bbox_bottom)
+if (floorDist >= 0)
+{
+	y -= floorDist + 1; 
+	vsp = 0;
+	floorDist = -1;
+}
+
+	
+
+
+
+/*
+
+
+var grounded = (InFloor(tilemap,x,y+1) >= 0)
+var left = InFloor(tilemap,x-1,y+1)
+var right = InFloor(tilemap,x+1,y+1)
+
 */
 
-//----------Bouncing off walls, friction, and gravity----------
-
-grounded = (place_meeting(x, y + 1, obj_wall));
-
-if (!grounded) {
-    vsp += grav;
-} else {
-    if (abs(0 - hsp) > 0.5) {
-        hsp -= hsp / 10;
-    } else {
-        hsp = 0;
-    }
-}
-
-//Horizontal collisions
-if (place_meeting(x + hsp, y, obj_wall)) {
-    while (!place_meeting(x + sign(hsp), y, obj_wall)) {
-        x += sign(hsp);
-    }
-    hsp = -hsp / 2;
-}
-
-//Horizontal movement
-x += hsp;
-
-//Vertical collisions
-if (place_meeting(x, y + vsp, obj_wall)) {
-    while (!place_meeting(x, y + sign(vsp), obj_wall)) {
-        y += sign(vsp);
-    }
-    vsp = -vsp / 1.5;
-}
-
-//Vertical movement
-if (grounded) && (abs(0 - vsp) < 1) vsp = 0;
-y += vsp;
-
-//Rotating
-dir += -hsp * 2;
