@@ -40,9 +40,11 @@ move = (key_right - key_left) * walksp
 hsp = move;
 vsp += grv;
 
-var grounded = (InFloor(tilemap,x,bbox_bottom+1) >= 0)
+var grounded = (InFloor(tilemap,x,bbox_bottom+1) >= 0) //Should it be >=?
 
 var left = InFloor(tilemap,bbox_left,bbox_bottom+1)
+
+
 var right = InFloor(tilemap,bbox_right,bbox_bottom+1)
 
 if(grounded || right >= 0 || left >= 0)

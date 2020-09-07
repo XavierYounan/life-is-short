@@ -21,6 +21,7 @@
     {"id":{"name":"oIceCube","path":"objects/oIceCube/oIceCube.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"mouse","path":"objects/mouse/mouse.yy",},"order":23,},
+    {"id":{"name":"InFloorWaterPart","path":"scripts/InFloorWaterPart/InFloorWaterPart.yy",},"order":2,},
     {"id":{"name":"sTilemapCollision","path":"sprites/sTilemapCollision/sTilemapCollision.yy",},"order":0,},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"order":0,},
     {"id":{"name":"rWelcome","path":"rooms/rWelcome/rWelcome.yy",},"order":0,},
