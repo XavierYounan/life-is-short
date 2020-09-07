@@ -64,16 +64,14 @@ if (floorDist >= 0)
 	floorDist = -1;
 }
 
+//Sample left and right tiles if grounded to see if should move down
+var grounded = (InFloor(tilemap,x,y+1) >= 0)
+if(grounded){	
+	var left = InFloor(tilemap,x-1,y+1)
+	var right = InFloor(tilemap,x+1,y+1)
+	
+	var diff = right-left
 	
 
-
-
-/*
-
-
-var grounded = (InFloor(tilemap,x,y+1) >= 0)
-var left = InFloor(tilemap,x-1,y+1)
-var right = InFloor(tilemap,x+1,y+1)
-
-*/
+}
 

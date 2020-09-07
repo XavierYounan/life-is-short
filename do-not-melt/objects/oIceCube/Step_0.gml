@@ -2,9 +2,9 @@
 var p1,p2,bbox_side;
 
 //Get inputs
-key_right = keyboard_check(vk_right);
-key_left = keyboard_check(vk_left);
-key_up = keyboard_check(vk_up);
+key_right = keyboard_check(ord("D"));
+key_left = keyboard_check(ord("A"));
+key_up = keyboard_check(ord("W"));
 //key_down = keyboard_check(vk_down);
 
 //shrink
