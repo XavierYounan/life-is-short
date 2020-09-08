@@ -27,6 +27,8 @@ sizeFrac = 0;
 
 lastSize = 32;
 
+global.lastDir = 1; //Last direction of water particle 0 is left 1 is right
+
 
 
 var all_layers = layer_get_all();

@@ -107,7 +107,14 @@ if (floorDist >= 0)
 var grounded = (InFloorWaterPart(tilemap,x,y+1) >= 0)
 if(grounded){	
 	var left = (InFloorWaterPart(tilemap,x-1,y+1) < 0)
-	var right = (InFloorWaterPart(tilemap,x+1,y+1) < 0)// will return 1 if there is space there
+	var right = (InFloorWaterPart(tilemap,x+1,y+1) < 0) // will return 1 if there is space there
+	
+	if(right && left){
+		right = right - global.lastDir;
+		left = global.lastDir;
+		global.lastDir = 0 ? global.lastDir = 1: global.lastDir = 0;
+	}
+	
 	if(right){ //right has priority if on a peak
 		x +=1;
 		hsp = 15

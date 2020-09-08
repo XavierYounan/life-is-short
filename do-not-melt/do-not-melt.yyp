@@ -20,6 +20,8 @@
     {"id":{"name":"tsGrass","path":"tilesets/tsGrass/tsGrass.yy",},"order":1,},
     {"id":{"name":"oIceCube","path":"objects/oIceCube/oIceCube.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
+    {"id":{"name":"oWaterParticleMangaer","path":"objects/oWaterParticleMangaer/oWaterParticleMangaer.yy",},"order":1,},
+    {"id":{"name":"waterParticleInteractions","path":"scripts/waterParticleInteractions/waterParticleInteractions.yy",},"order":2,},
     {"id":{"name":"mouse","path":"objects/mouse/mouse.yy",},"order":23,},
     {"id":{"name":"InFloorWaterPart","path":"scripts/InFloorWaterPart/InFloorWaterPart.yy",},"order":2,},
     {"id":{"name":"sTilemapCollision","path":"sprites/sTilemapCollision/sTilemapCollision.yy",},"order":0,},
