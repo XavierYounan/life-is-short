@@ -8,4 +8,8 @@ vspTransferRatio = 0.8
 
 
 waterParticles = [];
-length = 0;
+
+//Get the pointers of the arrays in the create event
+sizePointer = shader_get_uniform(shWater, "u_size");
+xArrayPointer = shader_get_uniform(shWater, "u_xArray");
+yArrayPointer = shader_get_uniform(shWater, "u_yArray");

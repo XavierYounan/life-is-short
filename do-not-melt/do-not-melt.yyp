@@ -6,6 +6,7 @@
     {"id":{"name":"oWaterParticle","path":"objects/oWaterParticle/oWaterParticle.yy",},"order":0,},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},"order":1,},
     {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":0,},
+    {"id":{"name":"shWater","path":"shaders/shWater/shWater.yy",},"order":3,},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":3,},
     {"id":{"name":"pSun","path":"paths/pSun/pSun.yy",},"order":0,},
     {"id":{"name":"oDeltaTime","path":"objects/oDeltaTime/oDeltaTime.yy",},"order":0,},
