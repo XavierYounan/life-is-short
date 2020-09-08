@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 WaterPart = function(_x, _y, _hsp, _vsp) constructor
 {
+	parent = oWaterParticleMangaer;
 	//Constructer sets x and y
 	hsp = _hsp; // pixels per seccond
 	vsp = _vsp; // Pixels per seccond
@@ -12,20 +13,13 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 	hMoveFrac = 0; // Pixels rounded last frame
 	vMoveFrac = 0;  // Pixels rounded last frame
 	
-	tilemap = oWaterParticleMangaer.tilemap;
+	tilemap = parent.tilemap;
 	
 	x = _x;
 	y = _y;
 
 	//One of the functions that WaterParticles can do
-	static Add = function( _other )
-	{
-	    x += _other.x;
-	    y += _other.y;
-	}
-	
-	static Step = function()
-	{
+	static Step = function(){
 		vsp += grv; //add gravity
 		hsp = hsp - sign(hsp) * global.dt_steady * hspDampening; //Decrease hsp
 
@@ -79,7 +73,7 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 		y += vMove; 
 
 
-		var floorDist = InFloorWaterPart(tilemap,x,y)
+		var floorDist = Collide(tilemap,x,y)
 		if (floorDist >= 0)
 		{
 			y -= floorDist + 1; 
@@ -95,10 +89,10 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 		*/
 
 		//Sample left and right tiles if grounded to see if should move down
-		var grounded = (InFloorWaterPart(tilemap,x,y+1) >= 0)
+		var grounded = (Collide(tilemap,x,y+1) >= 0)
 		if(grounded){	
-			var left = (InFloorWaterPart(tilemap,x-1,y+1) < 0)
-			var right = (InFloorWaterPart(tilemap,x+1,y+1) < 0) // will return 1 if there is space there
+			var left = (Collide(tilemap,x-1,y+1) < 0)
+			var right = (Collide(tilemap,x+1,y+1) < 0) // will return 1 if there is space there
 	
 			if(right && left){
 				right = right - global.lastDir;
@@ -112,13 +106,25 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 				y+=1;
 			}else {
 				if(left){
-					var left = (InFloorWaterPart(tilemap,x-1,y+1) < 0) 
+					var left = (Collide(tilemap,x-1,y+1) < 0) 
 					hsp = 15
 					x-=1;
 					y+=1; 
 				}
 			}
 		}
+		return;
+	}
+		
+	static Collide = function(tilemap,x,y){
+		
+		var length = array_length(parent.waterParticles);
+		for(var i=0; i<length; i++){
+			if((x == waterParticles[i].x) && (y == waterParticles[i].y)){
+				return true;
+			}
+		}
+		return InFloor(tilemap,x,y);
 	}
 }
 
