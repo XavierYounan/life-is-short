@@ -88,7 +88,7 @@ if (tilemap_get_at_pixel(tilemap,x,bbox_side+vMove) <=1)
 y += vMove; 
 
 
-var floorDist = InFloor(tilemap,x,bbox_bottom)
+var floorDist = InFloorWaterPart(tilemap,x,bbox_bottom)
 if (floorDist >= 0)
 {
 	y -= floorDist + 1; 
@@ -104,17 +104,17 @@ if (floorDist >= 0)
 */
 
 //Sample left and right tiles if grounded to see if should move down
-var grounded = (InFloor(tilemap,x,y+1) >= 0)
+var grounded = (InFloorWaterPart(tilemap,x,y+1) >= 0)
 if(grounded){	
-	var left = (InFloor(tilemap,x-1,y+1) < 0)
-	var right = (InFloor(tilemap,x+1,y+1) < 0)// will return 1 if there is space there
+	var left = (InFloorWaterPart(tilemap,x-1,y+1) < 0)
+	var right = (InFloorWaterPart(tilemap,x+1,y+1) < 0)// will return 1 if there is space there
 	if(right){ //right has priority if on a peak
 		x +=1;
 		hsp = 15
 		y+=1;
 	}else {
 		if(left){
-			var left = (InFloor(tilemap,x-1,y+1) < 0) 
+			var left = (InFloorWaterPart(tilemap,x-1,y+1) < 0) 
 			hsp = 15
 			x-=1;
 			y+=1; 
