@@ -6,10 +6,11 @@ hspDampening = 10 //ten pixels per seccond
 hspTransferRatio = 0.8 // this amount of energy goes into the colliding water molecule
 vspTransferRatio = 0.8
 
-
 waterParticles = [];
 
 //Get the pointers of the arrays in the create event
-sizePointer = shader_get_uniform(shWater, "u_size");
 xArrayPointer = shader_get_uniform(shWater, "u_xArray");
 yArrayPointer = shader_get_uniform(shWater, "u_yArray");
+
+xArray = [];
+yArray = [];
