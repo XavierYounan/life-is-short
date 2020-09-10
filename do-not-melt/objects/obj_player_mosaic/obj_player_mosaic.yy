@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_mozaic",
-    "path": "folders/Objects/Group_mozaic.yy",
+    "path": "folders/Shader/obj/obje/Group_mozaic.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_mosaic",

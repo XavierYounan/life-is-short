@@ -29,11 +29,6 @@ lookDistance = 100000
 cameraWidth = 600
 cameraHeight = 400
 
-/*
-player = oIceCube 
-x = oIceCube.x;
-y = oIceCube.y;
-*/
  
 var vm = matrix_build_lookat(x,y,depthMin,x,y,0,false,true,false);
 var pm = matrix_build_projection_ortho(cameraWidth,cameraHeight,0,lookDistance);
@@ -42,3 +37,5 @@ camera_set_view_mat(camera,vm);
 camera_set_proj_mat(camera,pm);
 
 view_camera[0] = camera;
+
+player = noone;

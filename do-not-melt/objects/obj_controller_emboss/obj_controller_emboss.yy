@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_emboss",
-    "path": "folders/Objects/Group_emboss.yy",
+    "path": "folders/Shader/obj/obje/Group_emboss.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_emboss",

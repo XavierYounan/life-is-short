@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_scanlines_effect",
-    "path": "folders/Objects/Group_scanlines_effect.yy",
+    "path": "folders/Shader/obj/obje/Group_scanlines_effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_scanlines",

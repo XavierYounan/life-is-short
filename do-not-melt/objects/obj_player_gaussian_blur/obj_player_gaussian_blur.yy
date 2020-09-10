@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_gaussian_blur",
-    "path": "folders/Objects/Group_gaussian_blur.yy",
+    "path": "folders/Shader/obj/obje/Group_gaussian_blur.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_gaussian_blur",

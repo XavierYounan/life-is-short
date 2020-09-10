@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_refraction",
-    "path": "folders/Objects/Group_refraction.yy",
+    "path": "folders/Shader/obj/obje/Group_refraction.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_refraction",

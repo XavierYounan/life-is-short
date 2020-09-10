@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_greyscale",
-    "path": "folders/Objects/Group_greyscale.yy",
+    "path": "folders/Shader/obj/obje/Group_greyscale.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_greyscale",

@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_sepia",
-    "path": "folders/Objects/Group_sepia.yy",
+    "path": "folders/Shader/obj/obje/Group_sepia.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_sepia",

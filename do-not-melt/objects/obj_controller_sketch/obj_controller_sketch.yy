@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_sketch",
-    "path": "folders/Objects/Group_sketch.yy",
+    "path": "folders/Shader/obj/obje/Group_sketch.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_sketch",

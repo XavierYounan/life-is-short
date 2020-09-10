@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_thermal",
-    "path": "folders/Objects/Group_thermal.yy",
+    "path": "folders/Shader/obj/obje/Group_thermal.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_thermal",

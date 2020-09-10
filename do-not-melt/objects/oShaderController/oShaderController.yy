@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ExperimentalShaders",
-    "path": "folders/ExperimentalShaders.yy",
+    "path": "folders/Depreciated/ExperimentalShaders.yy",
   },
   "resourceVersion": "1.0",
   "name": "oShaderController",

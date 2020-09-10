@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_brightness_contrast",
-    "path": "folders/Objects/Group_brightness_contrast.yy",
+    "path": "folders/Shader/obj/obje/Group_brightness_contrast.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_brightness_contrast",

@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_wave",
-    "path": "folders/Objects/Group_wave.yy",
+    "path": "folders/Shader/obj/obje/Group_wave.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_wave",

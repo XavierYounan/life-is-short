@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Group_refraction",
-    "path": "folders/Sprites/Group_refraction.yy",
+    "path": "folders/Shader/spr/Group_refraction.yy",
   },
   "resourceVersion": "1.0",
   "name": "bac_refraction_normal",

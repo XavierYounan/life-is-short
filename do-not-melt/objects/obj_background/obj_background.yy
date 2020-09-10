@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_common_required_objects",
-    "path": "folders/Objects/Group_common_required_objects.yy",
+    "path": "folders/Shader/obj/obje/Group_common_required_objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_background",

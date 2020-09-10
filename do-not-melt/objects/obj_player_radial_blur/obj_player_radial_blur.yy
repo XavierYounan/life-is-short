@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_radial_blur",
-    "path": "folders/Objects/Group_radial_blur.yy",
+    "path": "folders/Shader/obj/obje/Group_radial_blur.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_player_radial_blur",

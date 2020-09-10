@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a6a68232-5a84-4395-9700-6dac08afec29","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "spr",
+    "path": "folders/Shader/spr.yy",
   },
   "resourceVersion": "1.0",
   "name": "bac_level",

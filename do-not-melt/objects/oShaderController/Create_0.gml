@@ -1,1 +1,1 @@
-application_surface_draw_enable(false)
+//application_surface_draw_enable(false)

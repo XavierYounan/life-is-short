@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_magnify",
-    "path": "folders/Objects/Group_magnify.yy",
+    "path": "folders/Shader/obj/obje/Group_magnify.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_magnify",

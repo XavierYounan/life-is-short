@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_LED_effect",
-    "path": "folders/Objects/Group_LED_effect.yy",
+    "path": "folders/Shader/obj/obje/Group_LED_effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_LED_effect",

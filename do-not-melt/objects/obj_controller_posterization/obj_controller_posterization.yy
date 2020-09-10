@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_posterization",
-    "path": "folders/Objects/Group_posterization.yy",
+    "path": "folders/Shader/obj/obje/Group_posterization.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_posterization",

@@ -5,8 +5,6 @@ var length = array_length(waterParticles)
 for(var i=length-1; i>-1; i--){
 	waterParticles[i].Step();
 		
-	xArray[i] = waterParticles[i].x;
-	yArray[i] = waterParticles[i].y;
 }
 
 	

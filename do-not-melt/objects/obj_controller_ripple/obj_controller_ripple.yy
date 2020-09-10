@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_ripple",
-    "path": "folders/Objects/Group_ripple.yy",
+    "path": "folders/Shader/obj/obje/Group_ripple.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_ripple",

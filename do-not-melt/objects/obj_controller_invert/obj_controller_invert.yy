@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_invert",
-    "path": "folders/Objects/Group_invert.yy",
+    "path": "folders/Shader/obj/obje/Group_invert.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_invert",

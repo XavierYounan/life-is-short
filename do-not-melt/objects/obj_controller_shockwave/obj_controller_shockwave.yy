@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Group_shockwave",
-    "path": "folders/Objects/Group_shockwave.yy",
+    "path": "folders/Shader/obj/obje/Group_shockwave.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_controller_shockwave",
