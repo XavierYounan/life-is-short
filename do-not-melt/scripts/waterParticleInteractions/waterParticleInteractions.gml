@@ -1,5 +1,15 @@
-WaterPart = function(_x, _y, _hsp, _vsp) constructor
+function WaterPart(_x, _y, _hsp, _vsp) constructor
 {
+
+	/*
+		constants will not keep but rather change to referencees to the parent obect (maybe)
+	*/
+	grv = +10;
+	hspDampening = 10 //ten pixels per seccond
+	hspTransferRatio = 0.8 // this amount of energy goes into the colliding water molecule
+	vspTransferRatio = 0.8
+	
+
 	parent = oWaterParticleMangaer;
 	//Constructer sets x and y
 	hsp = _hsp; // pixels per seccond
@@ -52,16 +62,18 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 		x += hMove ;
 
 
+		
+
 		if (tilemap_get_at_pixel(tilemap,x,y+vMove) <=1)
 		{
 			p1 = tilemap_get_at_pixel(tilemap,x,y+vMove) 
-
-			if (p1 == 1)
+			p2 = tilemap_get_at_pixel(tilemap,x,y+vMove)
+			if (p1 == 1) || (p2 == 1)
 			{
 				if (vMove >= 0){
-					y = y - (y mod TILE_SIZE) + (TILE_SIZE-1)
+					y = y - (y mod TILE_SIZE) - (y - y) + (TILE_SIZE-1)
 				}else{
-					y = y - (y mod TILE_SIZE);
+					y = y - (y mod TILE_SIZE) - (y - y);
 				}
 				vMove = 0;
 				vsp = 0;
@@ -118,8 +130,8 @@ WaterPart = function(_x, _y, _hsp, _vsp) constructor
 		
 		var length = array_length(parent.waterParticles);
 		for(var i=0; i<length; i++){
-			if((x == waterParticles[i].x) && (y == waterParticles[i].y)){
-				return true;
+			if((x == parent.waterParticles[i].x) && (y == parent.waterParticles[i].y)){
+				return -1;
 			}
 		}
 		return InFloor(tilemap,x,y);

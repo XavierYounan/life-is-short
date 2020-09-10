@@ -9,5 +9,7 @@ vspTransferRatio = 0.8
 waterParticles = [];
 
 visibleParticles = [];
-visibleLength = 0;
+numVisibleParticles = 0;
+
 waterTransparency = 0.8;
+

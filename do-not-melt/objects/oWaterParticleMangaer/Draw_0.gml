@@ -1,12 +1,19 @@
+/*
 waterSurface = surface_create(oCamera.cameraWidth,oCamera.cameraHeight);
 surface_set_target(waterSurface);
-
-for(var i=0; i<visibleParticles; i++){
-	var xx = visibleParticles[i][0];
-	var yy = visibleParticles[i][1];
+*/
+var len = array_length(waterParticles)
+for(var i=0; i<len; i++){
+	var xx = waterParticles[i].x;
+	var yy = waterParticles[i].y;
 	
-	draw_sprite_ext(sWaterPart,0,xx,yy,1,1,0,-1,waterTransparency)
+	draw_sprite(sWaterPart,0,xx,yy)
+
+	
 }
+
+/*
 surface_reset_target()
 draw_surface(waterSurface,0,0);
 surface_free(waterSurface);
+*/
