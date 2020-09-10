@@ -99,7 +99,7 @@
     {"id":{"name":"obj_controller_shockwave","path":"objects/obj_controller_shockwave/obj_controller_shockwave.yy",},"order":0,},
     {"id":{"name":"InFloorWaterPart","path":"scripts/InFloorWaterPart/InFloorWaterPart.yy",},"order":2,},
     {"id":{"name":"shd_sketch","path":"shaders/shd_sketch/shd_sketch.yy",},"order":16,},
-    {"id":{"name":"rm_wave","path":"rooms/rm_wave/rm_wave.yy",},"order":17,},
+    {"id":{"name":"m_wave","path":"rooms/m_wave/m_wave.yy",},"order":17,},
     {"id":{"name":"rm_shockwave","path":"rooms/rm_shockwave/rm_shockwave.yy",},"order":14,},
     {"id":{"name":"sTilemapCollision","path":"sprites/sTilemapCollision/sTilemapCollision.yy",},"order":0,},
     {"id":{"name":"obj_controller_mosaic","path":"objects/obj_controller_mosaic/obj_controller_mosaic.yy",},"order":0,},
@@ -124,9 +124,9 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"rm_gaussian_blur","path":"rooms/rm_gaussian_blur/rm_gaussian_blur.yy",},
     {"name":"rInit","path":"rooms/rInit/rInit.yy",},
     {"name":"rWelcome","path":"rooms/rWelcome/rWelcome.yy",},
+    {"name":"rm_gaussian_blur","path":"rooms/rm_gaussian_blur/rm_gaussian_blur.yy",},
     {"name":"rm_brightness_contrast","path":"rooms/rm_brightness_contrast/rm_brightness_contrast.yy",},
     {"name":"rm_emboss","path":"rooms/rm_emboss/rm_emboss.yy",},
     {"name":"rm_greyscale","path":"rooms/rm_greyscale/rm_greyscale.yy",},
@@ -143,7 +143,7 @@
     {"name":"rm_shockwave","path":"rooms/rm_shockwave/rm_shockwave.yy",},
     {"name":"rm_sketch","path":"rooms/rm_sketch/rm_sketch.yy",},
     {"name":"rm_thermal","path":"rooms/rm_thermal/rm_thermal.yy",},
-    {"name":"rm_wave","path":"rooms/rm_wave/rm_wave.yy",},
+    {"name":"m_wave","path":"rooms/m_wave/m_wave.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":9,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},

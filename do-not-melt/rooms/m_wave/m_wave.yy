@@ -30,10 +30,10 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_D55AF703","path":"rooms/rm_wave/rm_wave.yy",},
-    {"name":"inst_3F42D076","path":"rooms/rm_wave/rm_wave.yy",},
-    {"name":"inst_C054F62E","path":"rooms/rm_wave/rm_wave.yy",},
-    {"name":"inst_0C8438BC","path":"rooms/rm_wave/rm_wave.yy",},
+    {"name":"inst_D55AF703","path":"rooms/m_wave/m_wave.yy",},
+    {"name":"inst_3F42D076","path":"rooms/m_wave/m_wave.yy",},
+    {"name":"inst_C054F62E","path":"rooms/m_wave/m_wave.yy",},
+    {"name":"inst_0C8438BC","path":"rooms/m_wave/m_wave.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -61,7 +61,7 @@
     "path": "folders/Shader/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "rm_wave",
+  "name": "m_wave",
   "tags": [],
   "resourceType": "GMRoom",
 }
