@@ -2,9 +2,9 @@
 var p1,p2,bbox_side;
 
 //Get inputs
-key_right = keyboard_check(vk_right);
-key_left = keyboard_check(vk_left);
-key_up = keyboard_check(vk_up);
+key_right = keyboard_check(ord("D"));
+key_left = keyboard_check(ord("A"));
+key_up = keyboard_check(ord("W"));
 //key_down = keyboard_check(vk_down);
 
 //shrink
@@ -20,7 +20,10 @@ sizeFrac = ceil(size) - size; // Find amount needed to round size up
 size += sizeFrac; //round size up
 
 if(size != lastSize){
-	//Create water particles
+	
+	instance_create_depth(x,y,height.decor,oWaterParticle)
+		
+	
 	lastSize = size;
 	
 	//Check if not too small
@@ -37,9 +40,11 @@ move = (key_right - key_left) * walksp
 hsp = move;
 vsp += grv;
 
-var grounded = (InFloor(tilemap,x,bbox_bottom+1) >= 0)
+var grounded = (InFloor(tilemap,x,bbox_bottom+1) >= 0) //Should it be >=?
 
 var left = InFloor(tilemap,bbox_left,bbox_bottom+1)
+
+
 var right = InFloor(tilemap,bbox_right,bbox_bottom+1)
 
 if(grounded || right >= 0 || left >= 0)

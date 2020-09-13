@@ -18,17 +18,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oInit","path":"objects/oInit/oInit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oInit","path":"objects/oInit/oInit.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"mouse","path":"objects/mouse/mouse.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/IceCube/Collision.yy",
+    "name": "do-not-melt",
+    "path": "do-not-melt.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "oInit",
+  "name": "mouse",
   "tags": [],
   "resourceType": "GMObject",
 }
