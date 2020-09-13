@@ -192,6 +192,7 @@
     {"folderPath":"folders/Shader/obj/obje.yy","order":0,"resourceVersion":"1.0","name":"obje","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Shader/shd/Shaders.yy","order":17,"resourceVersion":"1.0","name":"Shaders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Depreciated.yy","order":31,"resourceVersion":"1.0","name":"Depreciated","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Shader.yy","order":0,"resourceVersion":"1.0","name":"Shader","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

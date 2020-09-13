@@ -47,9 +47,12 @@ function WaterPart(_x, _y, _hsp, _vsp) constructor
 		vMoveFrac = vMove - (floor(abs(vMove)) * sign(vMove));
 		vMove -= vMoveFrac;
 
-		var p1 = tilemap_get_at_pixel(tilemap,x+hMove,y);
-
-		if(tilemap_get_at_pixel(tilemap,x,y+1) > 1) p1 = 0; //if on a slope ignore collision
+		//Horisontal collision			
+		if(tilemap_get_at_pixel(tilemap,x,y+1) > 1){
+			var p1 = 0; //if on a slope ignore collision
+		}else{
+			var p1 = tilemap_get_at_pixel(tilemap,x+hMove,y);
+		}
 
 		if (p1 == 1) //inside a tile with a collision
 		{
@@ -60,34 +63,33 @@ function WaterPart(_x, _y, _hsp, _vsp) constructor
 		}
 	
 		x += hMove ;
-
-
+		
+		
 		
 
-		if (tilemap_get_at_pixel(tilemap,x,y+vMove) <=1)
-		{
-			p1 = tilemap_get_at_pixel(tilemap,x,y+vMove) 
-			p2 = tilemap_get_at_pixel(tilemap,x,y+vMove)
-			if (p1 == 1) || (p2 == 1)
-			{
-				if (vMove >= 0){
-					y = y - (y mod TILE_SIZE) - (y - y) + (TILE_SIZE-1)
-				}else{
-					y = y - (y mod TILE_SIZE) - (y - y);
-				}
-				vMove = 0;
-				vsp = 0;
-			}
-		}
 
+		p1 = tilemap_get_at_pixel(tilemap,x,y+vMove) 	
+
+		if (p1 == 1) 
+		{
+			if (vMove >= 0){
+				y = y - (y mod TILE_SIZE) + (TILE_SIZE-1)
+			}else{
+				y = y - (y mod TILE_SIZE);
+			}
+			vMove = 0;
+			vsp = 0;
+		}
+	
 		y += vMove; 
 
 
-		var floorDist = Collide(tilemap,x,y)
+		var floorDist = InFloorWater(tilemap,x,y)
 		if (floorDist >= 0)
 		{
-			y -= floorDist + 1; 
+			y -= floorDist +1; 
 			vsp = 0;
+			vMove = 0;
 			floorDist = -1;
 		}
 
@@ -99,10 +101,10 @@ function WaterPart(_x, _y, _hsp, _vsp) constructor
 		*/
 
 		//Sample left and right tiles if grounded to see if should move down
-		var grounded = (Collide(tilemap,x,y+1) >= 0)
+		var grounded = (InFloorWater(tilemap,x,y+1) >= 0)
 		if(grounded){	
-			var left = (Collide(tilemap,x-1,y+1) < 0)
-			var right = (Collide(tilemap,x+1,y+1) < 0) // will return 1 if there is space there
+			var left = (InFloorWater(tilemap,x-1,y+1) < 0)
+			var right = (InFloorWater(tilemap,x+1,y+1) < 0) // will return 1 if there is space there
 	
 			if(right && left){
 				right = right - global.lastDir;
@@ -116,7 +118,7 @@ function WaterPart(_x, _y, _hsp, _vsp) constructor
 				y+=1;
 			}else {
 				if(left){
-					var left = (Collide(tilemap,x-1,y+1) < 0) 
+					var left = (InFloorWater(tilemap,x-1,y+1) < 0) 
 					hsp = 15
 					x-=1;
 					y+=1; 
@@ -125,16 +127,38 @@ function WaterPart(_x, _y, _hsp, _vsp) constructor
 		}
 		return;
 	}
-		
-	static Collide = function(tilemap,x,y){
-		
+	
+	/*
+	static Collide = function(tilemap,x,y){	
 		var length = array_length(parent.waterParticles);
 		for(var i=0; i<length; i++){
 			if((x == parent.waterParticles[i].x) && (y == parent.waterParticles[i].y)){
 				return -1;
 			}
 		}
-		return InFloor(tilemap,x,y);
+		return InFloor(tilemap,x,y);	
+	}
+	*/
+	
+	static InFloorWater = function(tilemap, x, y) {
+		var tileIndex = tilemap_get_at_pixel(tilemap, x, y)
+		if (tileIndex > 0) //if pixel is in a tile
+		{
+			if (tileIndex == 1) return (y mod TILE_SIZE); //solid tile
+	
+			var theFloor = global.heightsFromTop[(x mod TILE_SIZE) + (tileIndex * TILE_SIZE)]
+			return CheckWaterParticle((y mod TILE_SIZE) - theFloor,x,y);
+		} 
+		else return CheckWaterParticle( -(TILE_SIZE - (y mod TILE_SIZE)),x,y);
+	}
+	
+	static CheckWaterParticle = function(response,x,y){
+		var length = array_length(parent.waterParticles);
+		for(var i=0; i<length; i++){
+			if((x == parent.waterParticles[i].x) && (y == parent.waterParticles[i].y)){
+				return -1;
+			}
+		}
+		return response
 	}
 }
-
