@@ -12,16 +12,24 @@ roomWidth = room_width;
 roomHeight = room_height;
 
 enum waterType {
-	air = 0,
-	ground = 1,
-	water = 2,	
+	air = -2,
+	ground = -1,
 }
 
-waterCells = array_create(roomWidth);
+waterCells = array_create(roomWidth); //Cell manager
 
+//Water particle manager
 var predictedWater = roomWidth;
 water = array_create(predictedWater); //Need to change every time there is a new
 waterLength = 0;
+
+enum waterRef{
+	xx = 0,
+	yy = 1,
+	mass = 2 //for later
+}
+
+
 
 
 //Add all the ground elements
@@ -58,10 +66,7 @@ for(var xx=0; xx<roomWidth; xx++){
 			var tile = waterType.air;	
 		}
 		
-		
-		tile = waterCells[xx][yy];
-		
-	
+		waterCells[xx][yy] = tile;
 	}
 }
 

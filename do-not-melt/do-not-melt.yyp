@@ -89,7 +89,6 @@
     {"id":{"name":"rm_posterization","path":"rooms/rm_posterization/rm_posterization.yy",},"order":8,},
     {"id":{"name":"shd_magnify","path":"shaders/shd_magnify/shd_magnify.yy",},"order":5,},
     {"id":{"name":"obj_player_ripple","path":"objects/obj_player_ripple/obj_player_ripple.yy",},"order":1,},
-    {"id":{"name":"mouse","path":"objects/mouse/mouse.yy",},"order":23,},
     {"id":{"name":"obj_background","path":"objects/obj_background/obj_background.yy",},"order":0,},
     {"id":{"name":"obj_player_brightness_contrast","path":"objects/obj_player_brightness_contrast/obj_player_brightness_contrast.yy",},"order":1,},
     {"id":{"name":"rm_refraction","path":"rooms/rm_refraction/rm_refraction.yy",},"order":10,},

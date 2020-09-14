@@ -1,52 +1,10 @@
-/*
-waterSurface = surface_create(oCamera.cameraWidth,oCamera.cameraHeight);
-surface_set_target(waterSurface);
-*/
-
-/*
-var len = array_length(waterParticles)
-for(var i=0; i<len; i++){
-	var xx = waterParticles[i].x;
-	var yy = waterParticles[i].y;
-	
-	draw_sprite(sWaterPart,0,xx,yy)
-
-	
-}
-*/
-
-/*
-surface_reset_target()
-draw_surface(waterSurface,0,0);
-surface_free(waterSurface);
-*/
-
 if(display){
-	//Calculate bounds for display
-	//Only draw sprites in view angle
-	var xStart, xFinish, yStart, yFinish
-	with(oCamera){
-		xStart = max(x - cameraWidth,0);
-		xFinish = min(x + cameraWidth,other.roomWidth-1);
+	draw_set_alpha(0.8)
+	for(var i=0; i<waterLength; i++){
+		var xx = water[i][| waterRef.xx];
+		var yy = water[i][| waterRef.yy];
 		
-		yStart = max(y - cameraHeight, 0);
-		yFinish = min(y + cameraHeight, other.roomHeight-1);
+		draw_sprite(sWaterPart,0,xx,yy);
 	}
-	
-	draw_set_color(c_black);
-	
-	for(var i=0; i<groundLength; i++){ //For each ground particle
-		//If in bounds 
-			//Draw particle
-			
-			var xx = ground[i][0];
-			var yy = ground[i][1];
-			
-			draw_point(xx,yy);
-			//draw_sprite(sWall,0,xx,yy);
-		
-		
-	}
-	
-	draw_set_color(c_white);
+	draw_set_alpha(1);
 }
