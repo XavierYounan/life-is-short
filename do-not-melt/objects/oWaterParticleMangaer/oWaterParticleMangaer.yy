@@ -20,14 +20,13 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oWaterParticleMangaer","path":"objects/oWaterParticleMangaer/oWaterParticleMangaer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oWaterParticleMangaer","path":"objects/oWaterParticleMangaer/oWaterParticleMangaer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"parent":{"name":"oWaterParticleMangaer","path":"objects/oWaterParticleMangaer/oWaterParticleMangaer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oWaterParticleMangaer","path":"objects/oWaterParticleMangaer/oWaterParticleMangaer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Water",
-    "path": "folders/IceCube/Water.yy",
+    "name": "Water Round 1",
+    "path": "folders/IceCube/Water Round 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWaterParticleMangaer",

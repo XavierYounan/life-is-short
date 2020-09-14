@@ -17,17 +17,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"mouse","path":"objects/mouse/mouse.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "do-not-melt",
-    "path": "do-not-melt.yyp",
+    "name": "Fast water",
+    "path": "folders/IceCube/Fast water.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mouse",
+  "name": "oWaterManager",
   "tags": [],
   "resourceType": "GMObject",
 }
