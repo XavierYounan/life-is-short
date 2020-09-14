@@ -1,3 +1,4 @@
+show_debug_overlay(true)
 tilemap = oIceCube.tilemap
 
 grv = 10;
@@ -16,7 +17,11 @@ enum waterType {
 	water = 2,	
 }
 
-water = array_create(room_width);
+water = array_create(roomWidth);
+ground = array_create(roomWidth);
+groundLength = 0;
+
+
 
 //Add all the ground elements
 for(var xx=0; xx<roomWidth; xx++){
@@ -52,10 +57,21 @@ for(var xx=0; xx<roomWidth; xx++){
 			var tile = waterType.air;	
 		}
 		
-		water[xx][yy] = tile;
+		
+		if(tile == waterType.ground){
+			ground[groundLength] = [xx,yy]
+			water[xx][yy] = [tile,groundLength]
+			groundLength++;
+		}else{
+			water[xx][yy] = [tile,0]
+		}
 	
 	}
 }
+
+
+
+
 waterTransparency = 0.8;
 
 

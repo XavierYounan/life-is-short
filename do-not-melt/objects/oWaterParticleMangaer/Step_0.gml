@@ -11,3 +11,4 @@ for(var i=0; i<length; i++){ //update oldest particles first to improve flow eff
 if(keyboard_check_pressed(ord("Q"))){
 	display = (display + 1) mod 2
 }
+

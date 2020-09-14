@@ -22,6 +22,7 @@ surface_free(waterSurface);
 */
 
 if(display){
+	//Calculate bounds for display
 	//Only draw sprites in view angle
 	var xStart, xFinish, yStart, yFinish
 	with(oCamera){
@@ -32,11 +33,17 @@ if(display){
 		yFinish = min(y + cameraHeight, other.roomHeight-1);
 	}
 	
-	for(var xx=xStart; xx<xFinish; xx++){
-		for(var yy=yStart; yy<yFinish; yy++){
-			if(water[xx][yy] == waterType.ground){	
-				draw_sprite(sWall,0,xx,yy)
-			}
-		}
+	draw_set_color(c_black);
+	
+	for(var i=0; i<groundLength; i++){ //For each ground particle
+		//If in bounds 
+			//Draw particle
+			
+			var xx = ground[i][0];
+			var yy = ground[i][1];
+			draw_sprite(sWall,0,xx,yy);
+		
 	}
+	
+	draw_set_color(c_white);
 }
