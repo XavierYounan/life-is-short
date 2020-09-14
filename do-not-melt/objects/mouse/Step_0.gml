@@ -5,7 +5,10 @@ if(mouse_check_button(mb_left))
 		var count = 0;
 		for(var i=0; i<6; i++){
 			for(var j=0; j<6; j++){
-				waterParticles[length + count] = new WaterPart(mouse_x-2 + i,mouse_y-2 + j,0,0)
+				waterCells[mouse_x-2 + i][mouse_y-2 + j]
+				
+				
+				waterParticles[length + count] = new WaterPart(,,0,0)
 				count ++;
 			}
 		}

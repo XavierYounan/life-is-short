@@ -17,10 +17,11 @@ enum waterType {
 	water = 2,	
 }
 
-water = array_create(roomWidth);
-ground = array_create(227570); //Need to change every time there is a new
-groundLength = 0;
+waterCells = array_create(roomWidth);
 
+var predictedWater = roomWidth;
+water = array_create(predictedWater); //Need to change every time there is a new
+waterLength = 0;
 
 
 //Add all the ground elements
@@ -58,21 +59,11 @@ for(var xx=0; xx<roomWidth; xx++){
 		}
 		
 		
-		if(tile == waterType.ground){
-			ground[groundLength] = [xx,yy]
-			water[xx][yy] = [tile,groundLength]
-			groundLength++;
-		}else{
-			water[xx][yy] = [tile,0]
-		}
+		tile = waterCells[xx][yy];
+		
 	
 	}
 }
 
-
-
-
 waterTransparency = 0.8;
-
-
 display = 0;
