@@ -18,7 +18,7 @@ enum waterType {
 }
 
 water = array_create(roomWidth);
-ground = array_create(roomWidth);
+ground = array_create(227570); //Need to change every time there is a new
 groundLength = 0;
 
 

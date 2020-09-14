@@ -41,7 +41,10 @@ if(display){
 			
 			var xx = ground[i][0];
 			var yy = ground[i][1];
-			draw_sprite(sWall,0,xx,yy);
+			
+			draw_point(xx,yy);
+			//draw_sprite(sWall,0,xx,yy);
+		
 		
 	}
 	
