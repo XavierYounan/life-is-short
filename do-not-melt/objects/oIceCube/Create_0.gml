@@ -15,7 +15,6 @@ jump_speed = 440; // Pixels per seccond
 //Eventaully add finite state machiene
 playerState = 0
 
-
 //shrink
 initialSize = 32
 size = initialSize;
@@ -26,8 +25,6 @@ shrinkRate = (initialSize-deathSize)/dissappearTime// pixels per seccond
 sizeFrac = 0;
 
 lastSize = 32;
-
-global.lastDir = 1; //Last direction of water particle 0 is left 1 is right
 
 
 

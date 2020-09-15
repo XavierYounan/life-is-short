@@ -21,7 +21,7 @@ size += sizeFrac; //round size up
 
 if(size != lastSize){
 	
-	instance_create_depth(x,y,height.decor,oWaterParticle)
+	//instance_create_depth(x,y,height.decor,oWaterParticle)
 		
 	
 	lastSize = size;
@@ -146,6 +146,19 @@ if(grounded)
 		}
 	}
 		
+}
+
+var xx = x;
+var yy = y;
+with(oWaterParticleManger){
+	if(waterCells[xx][yy] = waterType.air){
+		var ls = ds_list_create()
+		ds_list_add(ls,xx,yy,0)
+	
+		waterCells[xx][yy] = ls;
+		water[waterLength] = ls;
+		waterLength++;
+	} 
 }
 #endregion
 
