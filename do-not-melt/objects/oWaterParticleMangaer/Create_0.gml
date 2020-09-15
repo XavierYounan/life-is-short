@@ -23,6 +23,9 @@ var predictedWater = roomWidth;
 water = array_create(predictedWater); //Need to change every time there is a new
 waterLength = 0;
 
+lastDir = 1; //Last direction of water particle 0 is left 1 is right
+
+
 enum waterRef{
 	xx = 0,
 	yy = 1,

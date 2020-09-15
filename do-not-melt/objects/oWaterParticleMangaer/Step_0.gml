@@ -53,10 +53,12 @@ for(var i=0; i<waterLength; i++){ //For each water particle
 		var right = (waterCells[xx+1][yy] == waterType.air)
 		
 		if(right && left){
-			right = right - global.lastDir;
-			left = global.lastDir;
-			global.lastDir = 0 ? global.lastDir = 1: global.lastDir = 0;
+			right = right - lastDir;
+			left = lastDir;
+			
+			lastDir = (lastDir + 1) mod 2
 		}
+		
 		if(right){
 			waterCells[xx+1][yy] = waterCells[xx][yy];//Move cell reference
 			water[i][| waterRef.xx] = xx+1; //Change ds_list reference

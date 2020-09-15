@@ -14,7 +14,6 @@
     {"id":{"name":"shd_emboss","path":"shaders/shd_emboss/shd_emboss.yy",},"order":1,},
     {"id":{"name":"obj_controller_thermal","path":"objects/obj_controller_thermal/obj_controller_thermal.yy",},"order":0,},
     {"id":{"name":"obj_player_invert","path":"objects/obj_player_invert/obj_player_invert.yy",},"order":1,},
-    {"id":{"name":"oWaterParticle","path":"objects/oWaterParticle/oWaterParticle.yy",},"order":0,},
     {"id":{"name":"obj_controller_sepia","path":"objects/obj_controller_sepia/obj_controller_sepia.yy",},"order":0,},
     {"id":{"name":"rm_invert","path":"rooms/rm_invert/rm_invert.yy",},"order":4,},
     {"id":{"name":"oCollisionInit","path":"objects/oCollisionInit/oCollisionInit.yy",},"order":1,},

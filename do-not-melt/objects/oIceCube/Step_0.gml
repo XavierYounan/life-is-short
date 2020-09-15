@@ -21,7 +21,7 @@ size += sizeFrac; //round size up
 
 if(size != lastSize){
 	
-	instance_create_depth(x,y,height.decor,oWaterParticle)
+	//instance_create_depth(x,y,height.decor,oWaterParticle)
 		
 	
 	lastSize = size;
