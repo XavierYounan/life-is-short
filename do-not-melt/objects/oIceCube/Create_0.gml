@@ -15,7 +15,6 @@ jump_speed = 440; // Pixels per seccond
 //Eventaully add finite state machiene
 playerState = 0
 
-
 //shrink
 initialSize = 32
 size = initialSize;

@@ -147,6 +147,19 @@ if(grounded)
 	}
 		
 }
+
+var xx = x;
+var yy = y;
+with(oWaterParticleManger){
+	if(waterCells[xx][yy] = waterType.air){
+		var ls = ds_list_create()
+		ds_list_add(ls,xx,yy,0)
+	
+		waterCells[xx][yy] = ls;
+		water[waterLength] = ls;
+		waterLength++;
+	} 
+}
 #endregion
 
 
