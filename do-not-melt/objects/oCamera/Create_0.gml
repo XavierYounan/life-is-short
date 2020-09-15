@@ -29,6 +29,7 @@ lookDistance = 100000
 cameraWidth = 600
 cameraHeight = 400
 
+tileWidth = 
  
 var vm = matrix_build_lookat(x,y,depthMin,x,y,0,false,true,false);
 var pm = matrix_build_projection_ortho(cameraWidth,cameraHeight,0,lookDistance);
