@@ -1,6 +1,6 @@
 //Changeable
-activatedTime = 20; //Number of secconds for the sun to reach the maximum position
-normalTime = 40; //Number of secconds for the sun to reach max normally
+activatedTime = 2000; //Number of secconds for the sun to reach the maximum position
+normalTime = 4000; //Number of secconds for the sun to reach max normally
 screenRatio = 0.75; //Max positon of the sun
 
 
