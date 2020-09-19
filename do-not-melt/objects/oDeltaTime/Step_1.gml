@@ -26,8 +26,6 @@ else
 }
 
 // Assign internal delta time to global delta time affected by the time scale
-//global.dt_steady = dt*scale;
-
 global.dt_steady = dt*scale;
 
 
