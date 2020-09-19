@@ -5,7 +5,9 @@
     {"id":{"name":"InFloor","path":"scripts/InFloor/InFloor.yy",},"order":0,},
     {"id":{"name":"oCollisionInit","path":"objects/oCollisionInit/oCollisionInit.yy",},"order":1,},
     {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":0,},
+    {"id":{"name":"catch_error","path":"extensions/catch_error/catch_error.yy",},"order":0,},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},"order":3,},
+    {"id":{"name":"compatibility_report_190920_2236463646","path":"notes/compatibility_report_190920_2236463646/compatibility_report_190920_2236463646.yy",},"order":1,},
     {"id":{"name":"oDeltaTime","path":"objects/oDeltaTime/oDeltaTime.yy",},"order":0,},
     {"id":{"name":"sFinish","path":"sprites/sFinish/sFinish.yy",},"order":1,},
     {"id":{"name":"LayerEnums","path":"scripts/LayerEnums/LayerEnums.yy",},"order":2,},
@@ -58,6 +60,8 @@
     {"folderPath":"folders/Level Managment/Scripts.yy","order":4,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/IceCube/Sprites.yy","order":2,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/IceCube/Water.yy","order":3,"resourceVersion":"1.0","name":"Water","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Debug.yy","order":23,"resourceVersion":"1.0","name":"Debug","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Debug/CatchError.yy","order":2,"resourceVersion":"1.0","name":"CatchError","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -65,7 +69,10 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"catch_error_help.html","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"catch_error_help.html","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.0.529",
   },
