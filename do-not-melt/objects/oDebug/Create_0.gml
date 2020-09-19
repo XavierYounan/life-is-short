@@ -11,19 +11,15 @@ enum ERROR_LEVEL
 	SPAM
 }
 
+enum ConsoleArray
+{
+	Message,
+	Level
+}
+
+
 spam_message = ds_map_create()
 spam_message_que = ds_list_create()
-
-instance_create_depth(-10,-10,-100,oGameConsole) //Fix depth later
-
-instance_create_depth(-10, -10, DEPTH.GUI, oSentryErrors)
-
-gmDebug = true
-
-if(gmDebug)
-{
-	instance_create_depth(-10,-10, DEPTH.GUI, gmdebug_handler)
-}
 
 m_maxMessages = 120;
 m_messageList = ds_list_create();
@@ -32,11 +28,6 @@ displayingText = false
 
 display_level = ERROR_LEVEL.DEBUG
 
-enum ConsoleArray
-{
-	Message,
-	Level
-}
 
 errorColours = ds_map_create()
 
@@ -90,9 +81,9 @@ if (file_exists(error_file)) {
 #endregion
 
 
-if(! sentry_init("https://fe51e4b37356486da7f212bb61434516@sentry.io/1869212") > 0)
+if(! sentry_init("https://acce9c79a94d44ad8aef6472da3c4b88@o254709.ingest.sentry.io/5434411") > 0)
 {
 	priv_console_add_message("sentry failed to initialise", ERROR_LEVEL.ERROR)
 }
 
-sentry_add_tag("Version", "0.0111")
+sentry_add_tag("Version", "sunAndMelting")

@@ -77,25 +77,25 @@ function sentry_capture_message() {
 						bracketPos -= 4;
 					}
 				
-					var function = string_copy(line, 1, linePos-1);
+					var func = string_copy(line, 1, linePos-1);
 					var lineText = string_copy(line, linePos+7, bracketPos-linePos-7);
 					var lineNumber = real(string_digits(lineText));
 					var context = string_delete(line, 1, bracketPos+3);
 			
 					var frame = ds_map_create();
-					// further split function
+					// further split func
 				
-					pos = string_pos("called from - ", function);
+					pos = string_pos("called from - ", func);
 					if (pos != 0) {
-						function = string_delete(function, pos, pos+14);
+						func = string_delete(func, pos, pos+14);
 					}
 				
-					if (string_pos("gml_Script_", function) == 1) { // a script
-						function = string_delete(function, 1, 11);
-						ds_map_add(frame, "module", function);
+					if (string_pos("gml_Script_", func) == 1) { // a script
+						func = string_delete(func, 1, 11);
+						ds_map_add(frame, "module", func);
 					}
-					else if (string_pos("gml_Object_", function) == 1) { // an object
-						function = string_delete(function, 1, 11);
+					else if (string_pos("gml_Object_", func) == 1) { // an object
+						func = string_delete(func, 1, 11);
 						// find second-last _ in object name
 						var f1 = 1
 						var f2 = 1;
@@ -104,18 +104,18 @@ function sentry_capture_message() {
 						do {
 							f1 = f2;
 							f2 = underscore;
-							var stub = string_copy(function, underscore, string_length(function)-underscore+1)
+							var stub = string_copy(func, underscore, string_length(func)-underscore+1)
 							var find = string_pos("_", stub);
 							underscore += find;
 					
 						} until (find == 0 or max_iter-- <=0)
 				
-						var module = string_delete(function, 1, f1-1);
-						function = string_copy(function, 1, f1-2);
+						var module = string_delete(func, 1, f1-1);
+						func = string_copy(func, 1, f1-2);
 						ds_map_add(frame, "module", module);
 					}
 		
-					ds_map_add(frame, "function", function);
+					ds_map_add(frame, "func", func);
 					ds_map_add(frame, "lineno", lineNumber);
 				
 					if (context != "") ds_map_add(frame, "context_line", context);
@@ -149,22 +149,22 @@ function sentry_capture_message() {
 			var stacktrace = ds_map_create();
 			var frames = ds_list_create();
 			var stack = debug_get_callstack();
-			for (var i=1; i<array_length_1d(stack); i++) { // ignore first item to avoid reporting this function
+			for (var i=1; i<array_length_1d(stack); i++) { // ignore first item to avoid reporting this func
 				var script = stack[i];
 				var linePos = string_pos(":", script);
 				if (linePos) {
 				
 					var frame = ds_map_create();
-					var function = string_copy(script, 1, linePos-1);
+					var func = string_copy(script, 1, linePos-1);
 					var lineText = string_copy(script, linePos+1, string_length(script)-linePos);
 					var lineNumber = real(string_digits(lineText));
 		
-					if (string_pos("gml_Script_", function) == 1) { // a script
-						function = string_delete(function, 1, 11);
-						ds_map_add(frame, "module", function);
+					if (string_pos("gml_Script_", func) == 1) { // a script
+						func = string_delete(func, 1, 11);
+						ds_map_add(frame, "module", func);
 					}
-					else if (string_pos("gml_Object_", function) == 1) { // an object
-						function = string_delete(function, 1, 11);
+					else if (string_pos("gml_Object_", func) == 1) { // an object
+						func = string_delete(func, 1, 11);
 						// find second-last _ in object name
 						var f1 = 1
 						var f2 = 1;
@@ -173,18 +173,18 @@ function sentry_capture_message() {
 						do {
 							f1 = f2;
 							f2 = underscore;
-							var stub = string_copy(function, underscore, string_length(function)-underscore+1)
+							var stub = string_copy(func, underscore, string_length(func)-underscore+1)
 							var find = string_pos("_", stub);
 							underscore += find;
 					
 						} until (find == 0 or max_iter-- <=0)
 				
-						var module = string_delete(function, 1, f1-1);
-						function = string_copy(function, 1, f1-2);
+						var module = string_delete(func, 1, f1-1);
+						func = string_copy(func, 1, f1-2);
 						ds_map_add(frame, "module", module);
 					}
 		
-					ds_map_add(frame, "function", function);
+					ds_map_add(frame, "func", func);
 					ds_map_add(frame, "lineno", lineNumber);
 				
 					ds_list_insert(frames, 0, frame);

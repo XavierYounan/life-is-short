@@ -1,4 +1,4 @@
-function show_debug() {
+function show_debug() { //Adds string split functionalty to show_debug_message
 	var _message = argument[0];
 
 	for (var _i = 1; _i < argument_count; _i++)
@@ -7,74 +7,16 @@ function show_debug() {
 	}
 
 	show_debug_message(_message)
-
-
 }
 
-function priv_debug_log() {
-	var message = argument[0]
-	var level = argument[1]
-	var variables = argument[2]
-	var stack = argument[3]
-	var title = argument[4]
-
-
-	switch (level)
-	{
-		case ERROR_LEVEL.FATAL:
-		{
-			sentry_capture_message(message, SENTRY_FATAL, stack, variables)
-			priv_console_add_message(message, level)
-			break;	
-		}
-	
-		case ERROR_LEVEL.ERROR:
-		{
-			sentry_capture_message(message, SENTRY_ERROR, stack, variables)
-			priv_console_add_message(message, level)
-			break;	
-		}
-	
-		case ERROR_LEVEL.WARNING:
-		{
-			sentry_capture_message(message, SENTRY_WARNING, stack, variables)
-			priv_console_add_message(message, level)
-			break;	
-		}
-	
-		case ERROR_LEVEL.INFO:
-		{
-			sentry_add_breadcrumb(title , SENTRY_INFO, message)
-			priv_console_add_message(message, level)
-			break;	
-		}
-	
-		case ERROR_LEVEL.DEBUG:
-		{
-			sentry_add_breadcrumb(title, SENTRY_DEBUG, message)
-			priv_console_add_message(message, level)
-			break;	
-		}
-	
-		case ERROR_LEVEL.SPAM:
-		{
-			priv_console_add_message(message, level)
-			break;	
-		}
-	}
-
-
-}
-
-/// @function debug_log(message, level, variables, title, spam)
-/// @desc Handles a debug message based on its level
-/// @param {string} Message The message to display
-/// @param {integer} Debug_level The severity of the debug message
-/// @param {obejct_reference} variables the object should contain any variables wished to be recorded
-/// @param {string} title the title of a breadcrumb
-/// @param {integer} spam Pause time before same message is logged again
-function debug_log() {
-
+function debug_log() { //level 1 limits spam
+	/// @function debug_log(message, level, variables, title, spam)
+	/// @desc Handles a debug message based on its level
+	/// @param {string} Message The message to display
+	/// @param {integer} Debug_level The severity of the debug message
+	/// @param {obejct_reference} variables the object should contain any variables wished to be recorded
+	/// @param {string} title the title of a breadcrumb
+	/// @param {integer} spam Pause time before same message is logged again
 	var stack = debug_get_callstack() //preserves stack as much as possible whilst retaining automation
 
 	var stack_string = ""
@@ -84,11 +26,8 @@ function debug_log() {
 	}
 
 
-
-
 	if(!instance_exists(oDebug))
 	{
-	
 		show_debug_message("Error logging," + string(stack_string))
 		return;
 	}
@@ -154,6 +93,75 @@ function debug_log() {
 	}
 
 
+
+
+}
+
+function priv_debug_log() { //Level 2  logs it to sentry and console when required
+	var message = argument[0]
+	var level = argument[1]
+	var variables = argument[2]
+	var stack = argument[3]
+	var title = argument[4]
+
+
+	switch (level)
+	{
+		case ERROR_LEVEL.FATAL:
+		{
+			sentry_capture_message(message, SENTRY_FATAL, stack, variables)
+			priv_console_add_message(message, level)
+			break;	
+		}
+	
+		case ERROR_LEVEL.ERROR:
+		{
+			sentry_capture_message(message, SENTRY_ERROR, stack, variables)
+			priv_console_add_message(message, level)
+			break;	
+		}
+	
+		case ERROR_LEVEL.WARNING:
+		{
+			sentry_capture_message(message, SENTRY_WARNING, stack, variables)
+			priv_console_add_message(message, level)
+			break;	
+		}
+	
+		case ERROR_LEVEL.INFO:
+		{
+			sentry_add_breadcrumb(title , SENTRY_INFO, message)
+			priv_console_add_message(message, level)
+			break;	
+		}
+	
+		case ERROR_LEVEL.DEBUG:
+		{
+			sentry_add_breadcrumb(title, SENTRY_DEBUG, message)
+			priv_console_add_message(message, level)
+			break;	
+		}
+	
+		case ERROR_LEVEL.SPAM:
+		{
+			priv_console_add_message(message, level)
+			break;	
+		}
+	}
+
+
+}
+
+function priv_console_add_message(argument0, argument1) { //level 3
+	with(oDebug)
+	{
+		ds_list_add(m_messageList,[argument0, argument1]);
+	
+		if (ds_list_size(m_messageList) > m_maxMessages)
+		{
+			ds_list_delete(m_messageList,0);	
+		}
+	}
 
 
 }
