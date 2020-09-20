@@ -1,4 +1,3 @@
-if(the){
-	the = false
-	show_error("test",true)
+if(keyboard_check(ord("E"))){
+	show_error("Manual", true);	
 }

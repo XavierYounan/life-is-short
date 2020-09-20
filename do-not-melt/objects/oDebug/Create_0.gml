@@ -40,37 +40,22 @@ ds_map_add(errorColours, ERROR_LEVEL.SPAM, c_gray)
 
 
 
-#region Setup catch error
-
-catch_error_init();
-
-//show_debug_message("ready? " + string(catch_error_is_ready())); //change to log debug
-
-catch_error_set_prompt(catch_error_prompt_question,
-    @"This wonderful little game encountered an error.
-Would you like to restart the program and view the error?",
-    "Oh no,");
-	
-	
-catch_error_set_normal(catch_error_normal_queue);
-catch_error_set_fatal(catch_error_fatal_queue);
-
-
+#region Setup error catching
+//If crash write error to error_file
 error_file = "misc/error.log";
-catch_error_set_dump_path(error_file);
 
-
-// let the program restart itself on error
-var argv = "", argc = parameter_count();
-for (var i = 1; i < argc; i++) {
-    if (i > 1) argv += " ";
-    var v = parameter_string(i);
-    if (string_pos(" ", v)) argv += @'"' + v + @'"'; else argv += v;
-}
-catch_error_set_exec(parameter_string(0), argv);
-
+exception_unhandled_handler(function(ex)
+    {
+    if file_exists(error_file) file_delete(error_file);
+    var _f = file_text_open_write(error_file);
+    file_text_write_string(_f, string(ex));
+    file_text_close(_f);
+    return 0;
+    }
+)
 
 error_text = "";
+
 if (file_exists(error_file)) {
     var buf = buffer_load(error_file);
     error_text = buffer_read(buf, buffer_string);
@@ -78,7 +63,10 @@ if (file_exists(error_file)) {
     file_delete(error_file);
 }
 
+
 #endregion
+
+
 
 
 if(! sentry_init("https://acce9c79a94d44ad8aef6472da3c4b88@o254709.ingest.sentry.io/5434411") > 0)
@@ -88,4 +76,3 @@ if(! sentry_init("https://acce9c79a94d44ad8aef6472da3c4b88@o254709.ingest.sentry
 
 sentry_add_tag("Version", "sunAndMelting")
 
-the = true

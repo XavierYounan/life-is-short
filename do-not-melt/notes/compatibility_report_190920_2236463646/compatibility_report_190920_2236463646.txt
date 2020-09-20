@@ -1,18 +1,0 @@
-Converting GML script: catch_error.gml
-Converted description /// @description  () : Should be ran before any other calls
-
-Converting GML script: catch_error.gml
-Converted description /// @description  (catch_error_prompt_kind, ?message, ?title, ?MSDN_MessageBox_type)/// @param catch_error_prompt_kind
-/// @param  ?message
-/// @param  ?title
-/// @param  ?MSDN_MessageBox_type
-
-Converting GML script: catch_error.gml
-Converted description /// @description  (?path) : Changes where to save a file with error message/// @param ?path
-
-Converting GML script: catch_error.gml
-Converted description /// @description  (?path, ?params) : Changes what executable to run in case of fatal error/// @param ?path
-/// @param  ?params
-
-Converting GML script: catch_error.gml
-Converted description /// @description  (mode:catch_error_set_newer_*)/// @param mode:catch_error_set_newer_*
