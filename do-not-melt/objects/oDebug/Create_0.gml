@@ -39,7 +39,6 @@ ds_map_add(errorColours, ERROR_LEVEL.DEBUG, c_blue)
 ds_map_add(errorColours, ERROR_LEVEL.SPAM, c_gray)
 
 
-
 #region Setup error catching
 //If crash write error to error_file
 error_file = "misc/error.log";
@@ -61,6 +60,7 @@ if (file_exists(error_file)) {
     error_text = buffer_read(buf, buffer_string);
     buffer_delete(buf);
     file_delete(error_file);
+	debug_log(error_text,ERROR_LEVEL.FATAL)
 }
 
 
