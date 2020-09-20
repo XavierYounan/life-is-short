@@ -15,8 +15,6 @@ if (displayingText)
 		}	
 	}
 
-	
-
 	var _listSize = ds_list_size(tempList);
 	var _yAnchor = window_get_height() - 10; //CHANGE TO VARIABLE PIXELS FROM LEFT
 	var _spacing = 30; //CHANGE TO FONT HEIGHT PLUS GAP
@@ -40,6 +38,7 @@ if (displayingText)
 		draw_text(10, _yAnchor - ((_listSize - i) * _spacing), message);
 	}
 	
+	draw_set_color(c_white)
 	
 	ds_list_destroy(tempList)
 
