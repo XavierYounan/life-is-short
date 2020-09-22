@@ -1,3 +1,10 @@
+function errorMessage(_message, _level) constructor
+{
+	Message = _message
+	Level = _level
+}
+
+
 function show_debug() { //Adds string split functionalty to show_debug_message
 	var _message = argument[0];
 
@@ -20,7 +27,7 @@ function debug_log() { //level 1 limits spam
 	var stack = debug_get_callstack() //preserves stack as much as possible whilst retaining automation
 
 	var stack_string = ""
-	for (var i = 0; i <array_length_1d(stack) ; ++i) 
+	for (var i = 0; i <array_length(stack) ; ++i) 
 	{
 	    stack_string += string(stack[i]);
 	}
@@ -48,7 +55,6 @@ function debug_log() { //level 1 limits spam
 	var variables = (argument_count > 2) ? argument[2] : undefined;
 	var title = (argument_count > 3) ? argument[3] : undefined;
 	var spamLimiter = (argument_count > 4) ? argument[4] : undefined;
-
 
 
 	if (spamLimiter = undefined)
@@ -152,14 +158,16 @@ function priv_debug_log() { //Level 2  logs it to sentry and console when requir
 
 }
 
-function priv_console_add_message(argument0, argument1) { //level 3
+function priv_console_add_message(_message, _level) { //level 3
 	with(oDebug)
 	{
-		ds_list_add(m_messageList,[argument0, argument1]);
+		var struct = new errorMessage(_message,_level)
+		ds_list_add(m_messageList,struct);
 	
 		if (ds_list_size(m_messageList) > m_maxMessages)
 		{
-			ds_list_delete(m_messageList,0);	
+			delete m_messageList[| 0];//delete struct
+			ds_list_delete(m_messageList,0); //Clear position in array	
 		}
 	}
 

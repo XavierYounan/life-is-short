@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Debug/Scripts.yy",
+    "name": "Debug",
+    "path": "folders/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "scirpts",

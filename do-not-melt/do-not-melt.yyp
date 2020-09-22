@@ -33,7 +33,7 @@
     {"id":{"name":"sGrassBackground","path":"sprites/sGrassBackground/sGrassBackground.yy",},"order":0,},
     {"id":{"name":"sWaterPart","path":"sprites/sWaterPart/sWaterPart.yy",},"order":1,},
     {"id":{"name":"sentry_capture_exception","path":"scripts/sentry_capture_exception/sentry_capture_exception.yy",},"order":6,},
-    {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},"order":4,},
+    {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},"order":1,},
     {"id":{"name":"sentry_add_tag","path":"scripts/sentry_add_tag/sentry_add_tag.yy",},"order":5,},
     {"id":{"name":"sentry_capture_message","path":"scripts/sentry_capture_message/sentry_capture_message.yy",},"order":7,},
     {"id":{"name":"sentry_error_pop","path":"scripts/sentry_error_pop/sentry_error_pop.yy",},"order":1,},
@@ -45,7 +45,7 @@
     {"id":{"name":"oIceCube","path":"objects/oIceCube/oIceCube.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"sentry_init","path":"scripts/sentry_init/sentry_init.yy",},"order":9,},
-    {"id":{"name":"scirpts","path":"scripts/scirpts/scirpts.yy",},"order":0,},
+    {"id":{"name":"scirpts","path":"scripts/scirpts/scirpts.yy",},"order":3,},
     {"id":{"name":"oWaterParticleManger","path":"objects/oWaterParticleManger/oWaterParticleManger.yy",},"order":1,},
     {"id":{"name":"sentry_saved_count","path":"scripts/sentry_saved_count/sentry_saved_count.yy",},"order":11,},
     {"id":{"name":"sentry_system_string","path":"scripts/sentry_system_string/sentry_system_string.yy",},"order":4,},
@@ -68,7 +68,9 @@
   "tutorialPath": "",
   "configs": {
     "name": "Default",
-    "children": [],
+    "children": [
+      {"name":"Debug","children":[],},
+    ],
   },
   "RoomOrder": [
     {"name":"rInit","path":"rooms/rInit/rInit.yy",},
@@ -94,9 +96,8 @@
     {"folderPath":"folders/Debug/Sentry/scr.yy","order":1,"resourceVersion":"1.0","name":"scr","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Debug/Sentry/scr/core.yy","order":1,"resourceVersion":"1.0","name":"core","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Debug/Sentry/scr/utility.yy","order":2,"resourceVersion":"1.0","name":"utility","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Debug/Sentry.yy","order":3,"resourceVersion":"1.0","name":"Sentry","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Debug/Sentry.yy","order":0,"resourceVersion":"1.0","name":"Sentry","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Utility.yy","order":25,"resourceVersion":"1.0","name":"Utility","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Debug/Scripts.yy","order":5,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

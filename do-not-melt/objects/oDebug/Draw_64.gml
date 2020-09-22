@@ -1,45 +1,29 @@
-if (displayingText)
+if (DEBUGGING)
 {
-	
-	tempList = ds_list_create()
-
-	//Make a tempoary list to remove all the messages below the debug level
-	for(var i = 0; i < ds_list_size(m_messageList); i++)
-	{
-		var array = m_messageList[| i]
-		var level = array[ConsoleArray.Level]
-	
-		if(level <= display_level)
-		{
-			ds_list_add(tempList,array)
-		}	
-	}
-
-	var _listSize = ds_list_size(tempList);
-	var _yAnchor = window_get_height() - 10; //CHANGE TO VARIABLE PIXELS FROM LEFT
-	var _spacing = 30; //CHANGE TO FONT HEIGHT PLUS GAP
-
+	var yAnchor = window_get_height() - bottomBorder; //CHANGE TO VARIABLE PIXELS FROM LEFT
 	
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_center)
 	draw_set_alpha(1)
 	
-	for (var i = _listSize - 1; i > -1; i--)
-	{
-		var array = tempList[| i]
+	//Prep loop
+	var listSize = ds_list_size(m_messageList) //Find list size
+	var count = 0; //number of drawn mesages (so when fiters doenst leave a gap)
+	 
+	for(var i=listSize-1; i>= 0; i--){
+		var struct = m_messageList[| i]; //Grab struct reference
 		
-		//set colour based on level
-		var level = array[ConsoleArray.Level]
-		var colour = errorColours[? level]
-		draw_set_color(colour)
+		var level = struct.Level; //Process level
+		if(struct.Level <= display_level)
+		{
+			//Draw and increment count
+			var colour = errorColours[? level]
+			var message = struct.Message;
+			
+			draw_set_color(colour);
+			draw_text(10, yAnchor - count * ySpacing, message);
+			count ++;
+		}	
 		
-		var message = array[ConsoleArray.Message]
-		
-		draw_text(10, _yAnchor - ((_listSize - i) * _spacing), message);
 	}
-	
-	draw_set_color(c_white)
-	
-	ds_list_destroy(tempList)
-
 }
