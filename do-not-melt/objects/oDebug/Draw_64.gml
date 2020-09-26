@@ -1,10 +1,11 @@
 if (DEBUGGING)
 {
-	var yAnchor = window_get_height() - bottomBorder; //CHANGE TO VARIABLE PIXELS FROM LEFT
+	var yAnchor = view_hport[0] * oCamera.resolutionScale - bottomBorder; 
 	
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_center)
 	draw_set_alpha(1)
+	draw_set_font(fDebug)
 	
 	//Prep loop
 	var listSize = ds_list_size(m_messageList) //Find list size
@@ -26,4 +27,5 @@ if (DEBUGGING)
 		}	
 		
 	}
+	draw_set_font(fDefault)
 }

@@ -30,7 +30,7 @@ ds_map_add(errorColours, ERROR_LEVEL.SPAM, c_gray)
 displayingText = true
 display_level = ERROR_LEVEL.DEBUG
 
-ySpacing = 30; 
+ySpacing = 60; 
 bottomBorder = 10
 //Dont change
 
