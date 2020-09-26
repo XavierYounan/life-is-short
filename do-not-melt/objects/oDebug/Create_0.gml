@@ -27,7 +27,7 @@ ds_map_add(errorColours, ERROR_LEVEL.INFO, c_white)
 ds_map_add(errorColours, ERROR_LEVEL.DEBUG, c_blue)
 ds_map_add(errorColours, ERROR_LEVEL.SPAM, c_gray)
 
-displayingText = true
+
 display_level = ERROR_LEVEL.DEBUG
 
 ySpacing = 60; 

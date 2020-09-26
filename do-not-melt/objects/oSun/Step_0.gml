@@ -5,15 +5,19 @@ if(keyboard_check(vk_space)){
 	if(timeA ==0){
 		timeA = initalRate;	
 	}else{
-		timeA = timeA * (1 + rateGrowth * dt)
+		timeA = timeA * (1 - timeDecay * dt)
 	}
+	var rateA = maxRatio * 1/timeA
+	
 }else{
 	timeA = 0;	
+	var rateA = 0;
 }
 
-var rateA = maxRatio * 1/timeA
+
 
 ratio = min(ratio + rateN * dt, maxRatio) //Normal movement
 ratio = min(ratio + rateA * dt, maxRatio) //Normal movement
 
 y = startHeight - ratio * moveAmount;
+

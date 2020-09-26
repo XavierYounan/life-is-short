@@ -7,7 +7,12 @@ key_left = keyboard_check(ord("A"));
 key_up = keyboard_check(ord("W"));
 //key_down = keyboard_check(vk_down);
 
-//shrink
+//shrink 
+//Calcuate ratio
+var curDissappearTime = minDissapearTime + (initialDissappearTime-minDissapearTime) * oSun.ratio/100
+var shrinkRate = (initialSize-deathSize)/curDissappearTime// pixels per seccond
+
+
 size -= sizeFrac;//Re apply sizeFrac
 size -= global.dt_steady * shrinkRate //Apply this frames shrink amount
 
@@ -21,10 +26,22 @@ size += sizeFrac; //round size up
 
 if(size != lastSize){
 	
-	//instance_create_depth(x,y,height.decor,oWaterParticle)
-		
-	
 	lastSize = size;
+	
+	var xx = x;
+	var yy = y;
+
+	with(oWaterParticleManger){
+		if(waterCells[xx][yy] = waterType.air){
+			var ls = ds_list_create()
+			ds_list_add(ls,xx,yy,0)
+	
+			waterCells[xx][yy] = ls;
+			water[waterLength] = ls;
+			waterLength++;
+		} 
+	}
+	
 	
 	//Check if not too small
 	if(size < deathSize){
@@ -148,18 +165,7 @@ if(grounded)
 		
 }
 
-var xx = x;
-var yy = y;
-with(oWaterParticleManger){
-	if(waterCells[xx][yy] = waterType.air){
-		var ls = ds_list_create()
-		ds_list_add(ls,xx,yy,0)
-	
-		waterCells[xx][yy] = ls;
-		water[waterLength] = ls;
-		waterLength++;
-	} 
-}
+
 #endregion
 
 

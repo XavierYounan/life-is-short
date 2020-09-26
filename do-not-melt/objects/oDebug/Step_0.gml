@@ -1,3 +1,5 @@
+
+/*
 if(keyboard_check_pressed(ord("E"))){
 	debug_log("Info",ERROR_LEVEL.INFO)
 }
@@ -17,3 +19,4 @@ if(keyboard_check_pressed(ord("Y"))){
 if(keyboard_check_pressed(ord("U"))){
 	debug_log("Fatal",ERROR_LEVEL.FATAL)
 }
+*/

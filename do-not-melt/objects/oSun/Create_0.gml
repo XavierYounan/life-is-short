@@ -2,7 +2,7 @@
 normalTime = 4000; //Number of secconds for the sun to reach max normally
 screenRatio = 0.75; //Max positon of the sun
 
-rateGrowth = 0.1 //growth rate of ten percent each seccond
+timeDecay = 0.5 //time to reach top decay of 10 percent each seccond
 initalRate = 8000; //Secconds for the sun to reach max vel
 
 //Do not chage
