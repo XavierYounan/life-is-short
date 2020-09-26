@@ -17,7 +17,7 @@ if (DEBUGGING)
 		var level = struct.Level; //Process level
 		if(struct.Level <= display_level)
 		{
-			//Draw and increment count
+			//Draw and increment count 
 			var colour = errorColours[? level]
 			var message = struct.Message;
 			
@@ -28,4 +28,5 @@ if (DEBUGGING)
 		
 	}
 	draw_set_font(fDefault)
+	draw_set_colour(c_white)
 }

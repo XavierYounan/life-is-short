@@ -10,7 +10,7 @@ function show_debug() { //Adds string split functionalty to show_debug_message
 
 	for (var _i = 1; _i < argument_count; _i++)
 	{
-		_message = string_replace(_message, FORMAT_TOKEN, string(argument[_i]));	
+		_message = string_replace(_message, "{}", string(argument[_i]));	
 	}
 
 	show_debug_message(_message)
@@ -35,7 +35,7 @@ function debug_log() { //level 1 limits spam
 
 	if(!instance_exists(oDebug))
 	{
-		show_debug_message("Error logging," + string(stack_string))
+		show_debug("Error logging: {}", string(stack_string));
 		return;
 	}
 

@@ -7,7 +7,7 @@ function stringSplit() {
 	    var delimiterLength = string_length(delimiter);
 	    var count = string_count(delimiter, theString);
 	    var position = 0;
-    
+  
 	    var returnArray;
     
 	    for (var i = 0; i < count; ++i)

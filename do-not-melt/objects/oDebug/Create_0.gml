@@ -31,7 +31,7 @@ displayingText = true
 display_level = ERROR_LEVEL.DEBUG
 
 ySpacing = 60; 
-bottomBorder = 10
+bottomBorder = 60
 //Dont change
 
 spam_message = ds_map_create()
