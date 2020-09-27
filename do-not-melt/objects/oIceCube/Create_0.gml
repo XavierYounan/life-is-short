@@ -21,7 +21,7 @@ size = initialSize;
 deathSize = 5;
 
 minDissapearTime = 2 //2 secconds
-initialDissappearTime = 200 //200 secconds
+initialDissappearTime = 30 //30 secconds
 
 
 sizeFrac = 0;

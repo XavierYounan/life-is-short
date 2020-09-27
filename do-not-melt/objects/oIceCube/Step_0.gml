@@ -9,7 +9,7 @@ key_up = keyboard_check(ord("W"));
 
 //shrink 
 //Calcuate ratio
-var curDissappearTime = minDissapearTime + (initialDissappearTime-minDissapearTime) * oSun.ratio/100
+var curDissappearTime = initialDissappearTime - (initialDissappearTime-minDissapearTime) * oSun.ratio/100
 var shrinkRate = (initialSize-deathSize)/curDissappearTime// pixels per seccond
 
 

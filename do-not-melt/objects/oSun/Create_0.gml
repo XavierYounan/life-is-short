@@ -2,8 +2,8 @@
 normalTime = 4000; //Number of secconds for the sun to reach max normally
 screenRatio = 0.75; //Max positon of the sun
 
-timeDecay = 0.5 //time to reach top decay of 10 percent each seccond
-initalRate = 8000; //Secconds for the sun to reach max vel
+timeDecay = 0.8 //time to reach top decay of 80 percent each seccond
+initalRate = 500; //Secconds for the sun to reach max vel
 
 //Do not chage
 maxRatio = 100; //sets the range for maxRatio
