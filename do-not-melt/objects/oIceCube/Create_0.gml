@@ -20,12 +20,12 @@ initialSize = 32
 size = initialSize;
 deathSize = 5;
 
-dissappearTime = 200 //200 secconds
-shrinkRate = (initialSize-deathSize)/dissappearTime// pixels per seccond
+minDissapearTime = 2 //2 secconds
+initialDissappearTime = 30 //30 secconds
+
+
 sizeFrac = 0;
-
 lastSize = 32;
-
 
 
 var all_layers = layer_get_all();

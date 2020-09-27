@@ -4,4 +4,10 @@ function Respawn(camera){
 	var obj = instance_create_depth(x,y,height.instances,oIceCube)
 	camera.player = obj
 	cubes--;
+	
+	with(oSun){
+		timeA = 0;
+		ratio = 0;
+	}
+	
 }

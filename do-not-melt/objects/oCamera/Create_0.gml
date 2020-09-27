@@ -2,8 +2,8 @@
 view_enabled = true;
 
 //Get the resolution of the monitor
-xMonitorResolution = display_get_width()
-yMonitorResolution = display_get_height()
+xMonitorResolution = display_get_width() * 0.75
+yMonitorResolution = display_get_height() * 0.75
 
 //Make view 0 visible
 view_set_visible(0, true);
@@ -19,7 +19,10 @@ view_set_yport(0,0);
 
 //Resize and center
 window_set_rectangle((display_get_width() - view_wport[0]) * 0.5, (display_get_height() - view_hport[0]) * 0.5, view_wport[0], view_hport[0]);
-surface_resize(application_surface,view_wport[0] * 2,view_hport[0] * 2);
+
+//Makes the application surface better quality
+resolutionScale = 2
+surface_resize(application_surface,view_wport[0] * resolutionScale,view_hport[0] * resolutionScale);
 
 camera = camera_create();
 
@@ -28,7 +31,6 @@ lookDistance = 100000
 
 cameraWidth = 600
 cameraHeight = 400
-
  
 var vm = matrix_build_lookat(x,y,depthMin,x,y,0,false,true,false);
 var pm = matrix_build_projection_ortho(cameraWidth,cameraHeight,0,lookDistance);
