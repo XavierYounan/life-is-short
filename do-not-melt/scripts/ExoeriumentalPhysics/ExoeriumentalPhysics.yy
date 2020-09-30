@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Collision",
-    "path": "folders/IceCube/Collision.yy",
+    "name": "do-not-melt",
+    "path": "do-not-melt.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "InFloor",
+  "name": "ExoeriumentalPhysics",
   "tags": [],
   "resourceType": "GMScript",
 }

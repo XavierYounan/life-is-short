@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Collision",
-    "path": "folders/Debug/IceCube/Collision.yy",
+    "path": "folders/IceCube/Collision.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCollisionInit",

@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Water",
-    "path": "folders/Debug/IceCube/Water.yy",
+    "path": "folders/IceCube/Water.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWaterParticleManger",
