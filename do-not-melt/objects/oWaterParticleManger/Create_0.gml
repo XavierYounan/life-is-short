@@ -1,4 +1,4 @@
-show_debug_overlay(true)
+ show_debug_overlay(true)
 tilemap = oIceCube.tilemap
 
 grv = 10;
