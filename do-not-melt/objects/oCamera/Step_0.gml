@@ -13,6 +13,18 @@ if(player != noone){
 	var vm = matrix_build_lookat(x,y,depthMin,x,y,0,false,true,false);
 	camera_set_view_mat(camera,vm);
 		
+	if(layer_exists(mountainLayer)){
+		layer_x(mountainLayer,x * mountainXSpeed);
+		layer_y(mountainLayer, mountainYTransform + (y-yStart)* mountainYSpeed);
+		//layer_y(mountainLayer,mountainYSpeed * y + mountainYTransform);	
+	}
+	
+	if(layer_exists(treesLayer)){
+		layer_x(treesLayer,x * treesXSpeed);
+		layer_y(treesLayer, treesYTransform + (y-yStart) * treesYSpeed);
+		//layer_y(treesLayer,treesYSpeed * y + treesYTransform);
+	}
+		
 	#endregion
 }else{
 	var xx = room_width/2;
