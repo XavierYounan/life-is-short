@@ -29,8 +29,8 @@ camera = camera_create();
 depthMin = -1000
 lookDistance = 100000
 
-cameraWidth = 600
-cameraHeight = 400
+cameraWidth = 1000
+cameraHeight = 563
  
 var vm = matrix_build_lookat(x,y,depthMin,x,y,0,false,true,false);
 var pm = matrix_build_projection_ortho(cameraWidth,cameraHeight,0,lookDistance);
@@ -41,3 +41,24 @@ camera_set_proj_mat(camera,pm);
 view_camera[0] = camera;
 
 player = noone;
+
+mountainLayer = layer_get_id("Mountains");
+treesLayer = layer_get_id("Trees");
+
+if(mountainLayer == -1 || treesLayer == -1){
+	debug_log("Could not find mountain or trees layer", ERROR_LEVEL.WARNING,self);
+}
+
+//Paralax backgrounds
+//x
+mountainXSpeed = 0.5;
+treesXSpeed = 0.25;
+
+//y
+mountainYSpeed = 0.5;
+treesYSpeed = 0.25;
+
+mountainYTransform = 170;
+treesYTransform = 300;
+
+yStart = 544//oStart.x;
