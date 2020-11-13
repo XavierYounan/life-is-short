@@ -19,5 +19,5 @@ if(keyboard_check(vk_space)){
 ratio = min(ratio + rateN * dt, maxRatio) //Normal movement
 ratio = min(ratio + rateA * dt, maxRatio) //Normal movement
 
-y = startHeight - ratio * moveAmount;
+//y = startHeight - ratio * moveAmount;
 

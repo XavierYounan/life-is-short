@@ -61,6 +61,7 @@ if(!DEBUGGING){
 	if (file_exists(error_file)) {
 	    var buf = buffer_load(error_file);
 	    error_text = buffer_read(buf, buffer_string);
+		//Add an apology message here
 	    buffer_delete(buf);
 	    file_delete(error_file);
 		debug_log(error_text,ERROR_LEVEL.FATAL)
