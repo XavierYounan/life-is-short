@@ -10,7 +10,6 @@ cameraHeight = 563
 //x
 treesXSpeed = 0.25;
 mountainXSpeed = 0.5;
-sunXSpeed = 0.95;
 sunXRatio = 0.25; //25 percent of the x width
 
 //y

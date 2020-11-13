@@ -19,7 +19,8 @@ if(player != noone){
 	layer_x(treesLayer,x * treesXSpeed);
 	layer_y(treesLayer, treesYTransform + (y-yStart) * treesYSpeed);
 	
-	sunInst.x = sunXTransform + x * sunXSpeed
+	ratio = (room_width-x)/room_width - 0.5;
+	sunInst.x = x + cameraWidth * ratio;
 	
 
 	#endregion
