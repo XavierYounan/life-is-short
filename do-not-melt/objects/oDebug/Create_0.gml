@@ -2,6 +2,9 @@
 #macro DEBUGGING false
 #macro Debug:DEBUGGING true
 
+if(DEBUGGING == true){
+	show_debug_overlay(true)	
+}
 
 //setup
 if (!assert_singleton()) return;

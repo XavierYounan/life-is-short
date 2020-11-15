@@ -16,8 +16,17 @@ initialSize = 32
 size = initialSize;
 deathSize = 5;
 
+/*
+//GET RID
+meltOutsideBorder = 19;
+meltInsideBorder = 10;
+meltBorderDiff = ceil((meltOutsideBorder-meltInsideBorder)/2);
+*/
+
+meltBorder = 4;
+
 minDissapearTime = 2 //2 secconds
-initialDissappearTime = 30 //30 secconds
+initialDissappearTime = 30 //30 secco	nds
 
 sizeFrac = 0;
 lastSize = 32;
