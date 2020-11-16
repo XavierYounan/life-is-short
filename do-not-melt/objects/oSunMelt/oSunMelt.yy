@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sMeltBar",
-    "path": "sprites/sMeltBar/sMeltBar.yy",
+    "name": "sMeltBackground",
+    "path": "sprites/sMeltBackground/sMeltBackground.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,8 +22,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oSunMelt","path":"objects/oSunMelt/oSunMelt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oSunMelt","path":"objects/oSunMelt/oSunMelt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oSunMelt","path":"objects/oSunMelt/oSunMelt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"oSunMelt","path":"objects/oSunMelt/oSunMelt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

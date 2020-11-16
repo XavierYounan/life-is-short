@@ -10,7 +10,7 @@ cameraHeight = 563
 //x
 treesXSpeed = 0.25;
 mountainXSpeed = 0.5;
-sunXRatio = 0.25; //25 percent of the x width
+
 
 //y
 mountainYSpeed = 0.5;
@@ -65,13 +65,13 @@ player = noone;
 //Get references
 mountainLayer = layer_get_id("Mountains");
 treesLayer = layer_get_id("Trees");
-sunInst = instance_find(oSun,0);
+var sunManager = instance_find(oSunManager,0)
 
 //Confirm referneces
-if(mountainLayer == -1 || treesLayer == -1 || sunInst == -1){
-	debug_log("Could not find mountain or trees layer", ERROR_LEVEL.WARNING,self);
+if(mountainLayer == -1 || treesLayer == -1 || sunManager == -4){
+	debug_log("Could not find mountain/trees layer or sun manger object", ERROR_LEVEL.WARNING,self);
 }
 
-//Calcuate sun transform
-sunXTransform = (sunXRatio - 0.50) * cameraWidth
+sunInst = sunManager.sun
+
 #endregion

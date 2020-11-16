@@ -1,23 +1,19 @@
-var dt = global.dt_steady
-
-if(keyboard_check(vk_space)){
-	//Grow rate A
-	if(timeA ==0){
-		timeA = initalRate;	
-	}else{
-		timeA = timeA * (1 - timeDecay * dt)
-	}
-	var rateA = maxRatio * 1/timeA
-	
-}else{
-	timeA = 0;	
-	var rateA = 0;
+if(keyboard_check_pressed(vk_space)){
+	intensity++ //Increment intensity
+	intensity = min(intensity,4); //Cap Intensity at 4
+	sunIntensity.image_index = intensity; //Update the intensity indicator
+	barSecconds = intensityMeltTime[intensity] //reset bar secconds
+	//Melt
 }
 
+//Increment bar secconds
+var dt = global.dt_steady;
+barSecconds -= dt;
 
+if(barSecconds <= 0){
+	barSecconds = intensityMeltTime[intensity] //reset bar secconds
+	//Melt
+}
 
-ratio = min(ratio + rateN * dt, maxRatio) //Normal movement
-ratio = min(ratio + rateA * dt, maxRatio) //Normal movement
-
-//y = startHeight - ratio * moveAmount;
-
+//Send the bar percent to the ui
+sunMeltBar.percent = barSecconds/intensityMeltTime[intensity];
