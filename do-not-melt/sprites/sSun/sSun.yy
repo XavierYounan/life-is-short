@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Sun",
-    "path": "folders/Sun.yy",
+    "path": "folders/Sun/UI/Sun.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSun",

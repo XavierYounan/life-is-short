@@ -71,7 +71,7 @@
   ],
   "parent": {
     "name": "Sprites",
-    "path": "folders/UI/Melt/Sprites.yy",
+    "path": "folders/Sun/UI/Melt Bar/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sMeltBar",

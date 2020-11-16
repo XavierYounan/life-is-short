@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sSun",
-    "path": "sprites/sSun/sSun.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,17 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oSun","path":"objects/oSun/oSun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oSun","path":"objects/oSun/oSun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oSunManager","path":"objects/oSunManager/oSunManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oSunManager","path":"objects/oSunManager/oSunManager.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Sun",
-    "path": "folders/Sun/UI/Sun.yy",
+    "path": "folders/Sun.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oSun",
+  "name": "oSunManager",
   "tags": [],
   "resourceType": "GMObject",
 }

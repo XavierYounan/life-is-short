@@ -25,9 +25,9 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"dbc16ef1-72cb-484d-8bc8-8baa3e985d68","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"sMeltBackground","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"9a314acd-92d9-42e5-a165-dead99b4b537","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"sMeltBackground","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"338217c4-7a97-454e-8f97-a57780338ec1","path":"sprites/sMeltBackground/sMeltBackground.yy",},"LayerId":{"name":"02b05c67-ec2f-41a2-aca4-e5d8ce8bd8de","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sMeltBackground","path":"sprites/sMeltBackground/sMeltBackground.yy",},"resourceVersion":"1.0","name":"338217c4-7a97-454e-8f97-a57780338ec1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -72,7 +72,7 @@
   ],
   "parent": {
     "name": "Sprites",
-    "path": "folders/UI/Melt/Sprites.yy",
+    "path": "folders/Sun/UI/Melt Bar/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sMeltBackground",
