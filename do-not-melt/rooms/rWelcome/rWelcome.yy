@@ -63,11 +63,11 @@
   "creationCodeFile": "${project_dir}/rooms/rWelcome/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
+    {"name":"inst_274765FA","path":"rooms/rWelcome/rWelcome.yy",},
+    {"name":"inst_4CFD95D3","path":"rooms/rWelcome/rWelcome.yy",},
     {"name":"inst_6939BAB1","path":"rooms/rWelcome/rWelcome.yy",},
     {"name":"inst_13CFF5D3","path":"rooms/rWelcome/rWelcome.yy",},
     {"name":"inst_2DB1533F","path":"rooms/rWelcome/rWelcome.yy",},
-    {"name":"inst_274765FA","path":"rooms/rWelcome/rWelcome.yy",},
-    {"name":"inst_4CFD95D3","path":"rooms/rWelcome/rWelcome.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
