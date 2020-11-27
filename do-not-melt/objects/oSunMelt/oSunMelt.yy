@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sMeltBackground",
-    "path": "sprites/sMeltBackground/sMeltBackground.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

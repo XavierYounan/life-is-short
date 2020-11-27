@@ -7,7 +7,6 @@
     {"id":{"name":"sentry_set_user","path":"scripts/sentry_set_user/sentry_set_user.yy",},"order":15,},
     {"id":{"name":"InFloor","path":"scripts/InFloor/InFloor.yy",},"order":0,},
     {"id":{"name":"sentry_browser_string","path":"scripts/sentry_browser_string/sentry_browser_string.yy",},"order":0,},
-    {"id":{"name":"rUiPositioning","path":"rooms/rUiPositioning/rUiPositioning.yy",},"order":3,},
     {"id":{"name":"sentry_last_event_id","path":"scripts/sentry_last_event_id/sentry_last_event_id.yy",},"order":10,},
     {"id":{"name":"oCollisionInit","path":"objects/oCollisionInit/oCollisionInit.yy",},"order":1,},
     {"id":{"name":"sIceCube","path":"sprites/sIceCube/sIceCube.yy",},"order":0,},
@@ -86,7 +85,6 @@
   "RoomOrder": [
     {"name":"rInit","path":"rooms/rInit/rInit.yy",},
     {"name":"rWelcome","path":"rooms/rWelcome/rWelcome.yy",},
-    {"name":"rUiPositioning","path":"rooms/rUiPositioning/rUiPositioning.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},
@@ -102,7 +100,7 @@
     {"folderPath":"folders/Level Managment.yy","order":8,"resourceVersion":"1.0","name":"Level Managment","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Level Managment/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Level Managment/Scripts.yy","order":4,"resourceVersion":"1.0","name":"Scripts","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/IceCube/Sprites.yy","order":4,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/IceCube/Water/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/IceCube/Water.yy","order":5,"resourceVersion":"1.0","name":"Water","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Debug.yy","order":9,"resourceVersion":"1.0","name":"Debug","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Debug/Sentry/scr.yy","order":1,"resourceVersion":"1.0","name":"scr","tags":[],"resourceType":"GMFolder",},

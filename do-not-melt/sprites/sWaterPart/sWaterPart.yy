@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Sprites",
-    "path": "folders/IceCube/Sprites.yy",
+    "path": "folders/IceCube/Water/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sWaterPart",

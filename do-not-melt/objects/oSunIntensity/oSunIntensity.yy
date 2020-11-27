@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sSunIntensity",
-    "path": "sprites/sSunIntensity/sSunIntensity.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -8,8 +8,8 @@ if(uiLayer ==-1 || sunLayer == -1){
 
 //Create objects with scales
 sunIntensity = instance_create_layer(883,521,uiLayer,oSunIntensity);
-sunIntensity.image_xscale = 0.2057927
-sunIntensity.image_yscale = 0.125
+sunIntensity.xScale = 0.2057927
+sunIntensity.yScale = 0.125
 
 sunMeltBar = instance_create_layer(13,521,uiLayer,oSunMelt);
 sunMeltBar.xScale = 0.4189453

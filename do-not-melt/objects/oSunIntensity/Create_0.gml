@@ -1,2 +1,4 @@
-image_speed = 0;
-image_index = 0;
+xScale = 1;
+yScale = 1;
+
+index = 0;
