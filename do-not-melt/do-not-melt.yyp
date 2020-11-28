@@ -25,6 +25,7 @@
     {"id":{"name":"sentry_add_extra","path":"scripts/sentry_add_extra/sentry_add_extra.yy",},"order":4,},
     {"id":{"name":"sentry_saved_delete","path":"scripts/sentry_saved_delete/sentry_saved_delete.yy",},"order":12,},
     {"id":{"name":"sentry_datetime_string","path":"scripts/sentry_datetime_string/sentry_datetime_string.yy",},"order":1,},
+    {"id":{"name":"rUiDesign","path":"rooms/rUiDesign/rUiDesign.yy",},"order":3,},
     {"id":{"name":"sentry_add_breadcrumb","path":"scripts/sentry_add_breadcrumb/sentry_add_breadcrumb.yy",},"order":3,},
     {"id":{"name":"sentry_saved_send","path":"scripts/sentry_saved_send/sentry_saved_send.yy",},"order":13,},
     {"id":{"name":"Respawn","path":"scripts/Respawn/Respawn.yy",},"order":0,},
@@ -85,6 +86,7 @@
   "RoomOrder": [
     {"name":"rInit","path":"rooms/rInit/rInit.yy",},
     {"name":"rWelcome","path":"rooms/rWelcome/rWelcome.yy",},
+    {"name":"rUiDesign","path":"rooms/rUiDesign/rUiDesign.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},

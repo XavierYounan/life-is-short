@@ -1,3 +1,5 @@
+var scale = 5
+
 //Get layers
 var uiLayer = layer_get_id("UserInterface")
 var sunLayer = layer_get_id("Sun")
@@ -7,13 +9,13 @@ if(uiLayer ==-1 || sunLayer == -1){
 }
 
 //Create objects with scales
-sunIntensity = instance_create_layer(883,521,uiLayer,oSunIntensity);
-sunIntensity.xScale = 0.2057927
-sunIntensity.yScale = 0.125
+sunIntensity = instance_create_layer(883 * scale ,521 * scale,uiLayer,oSunIntensity);
+sunIntensity.xScale = 0.2057927 * scale
+sunIntensity.yScale = 0.125 * scale
 
-sunMeltBar = instance_create_layer(13,521,uiLayer,oSunMelt);
-sunMeltBar.xScale = 0.4189453
-sunMeltBar.yScale = 0.25
+sunMeltBar = instance_create_layer(13 * scale,521 * scale,uiLayer,oSunMelt);
+sunMeltBar.xScale = 0.4189453 * scale
+sunMeltBar.yScale = 0.25 * scale
 
 //Acess sun object
 //object is placed in the room so the height is different per room
