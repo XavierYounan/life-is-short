@@ -10,6 +10,7 @@ if(uiLayer ==-1 || sunLayer == -1){
 }
 
 createdObjects = false;
+objectCreationTrigger = false;
 
 //Acess sun object
 //object is placed in the room so the height is different per room
