@@ -56,6 +56,9 @@ var pm = matrix_build_projection_ortho(cameraWidth,cameraHeight,0,lookDistance);
 camera_set_view_mat(camera,vm);
 camera_set_proj_mat(camera,pm);
 
+guiWidth = display_get_gui_width()
+guiHeight = display_get_gui_width()
+
 view_camera[0] = camera;
 
 player = noone;
