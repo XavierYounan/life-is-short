@@ -9,9 +9,6 @@ if(uiLayer ==-1 || sunLayer == -1){
 	debug_log("Could not find ui or sun layer", ERROR_LEVEL.WARNING)          
 }
 
-createdObjects = false;
-objectCreationTrigger = false;
-
 //Acess sun object
 //object is placed in the room so the height is different per room
 sun = instance_find(oSun,0)
@@ -26,3 +23,24 @@ intensity = 0;
 intensityMeltTime = [20,15,10,6,2] //secconds for the bar 
 
 barSecconds = intensityMeltTime[intensity]
+
+
+		
+//Create objects with scales
+sunIntensity = instance_create_layer(0 ,0,uiLayer,oSunIntensity);
+with(sunIntensity){
+	baseX = 5073;
+	baseY = 2944;
+	baseXScale = 1.281837;
+	baseYScale = 0.8984375;
+}
+		
+sunMeltBar = instance_create_layer(0,0,uiLayer,oSunMelt);
+with(sunMeltBar){
+	baseX = 5073;
+	baseY = 2944;
+	baseXScale = 2.420898;
+	baseYScale = 1.796875;
+			
+			
+}
