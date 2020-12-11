@@ -1,7 +1,7 @@
 if(keyboard_check_pressed(vk_space)){
 	intensity++ //Increment intensity
 	intensity = min(intensity,4); //Cap Intensity at 4
-	sunIntensity.image_index = intensity; //Update the intensity indicator
+	sunIntensity.index = intensity; //Update the intensity indicator
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
 	//Melt
 }
