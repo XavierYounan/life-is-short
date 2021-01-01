@@ -10,6 +10,9 @@ var yy = hRatio * baseY;
 var xScale = wRatio * baseXScale;
 var yScale = hRatio * baseYScale;
 
+var scaledXOrigin = barXOrigin * xScale;
+var scaledYOrigin = barYOrigin * yScale;
+
 draw_sprite_ext(sMeltBackground, 0, xx, yy, xScale, yScale,0,-1,1)
-draw_sprite_ext(sMeltBar, 0, xx + barXOrigin * xScale, yy , xScale * percent, yScale, 0, -1, 1)
+draw_sprite_ext(sMeltBar, 0, xx + scaledXOrigin * xScale, yy + scaledYOrigin , xScale * percent, yScale, 0, -1, 1)
 

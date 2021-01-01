@@ -37,7 +37,7 @@ with(sunIntensity){
 		
 sunMeltBar = instance_create_layer(0,0,uiLayer,oSunMelt);
 with(sunMeltBar){
-	baseX = 5073;
+	baseX = 64;
 	baseY = 2944;
 	baseXScale = 2.420898;
 	baseYScale = 1.796875;
