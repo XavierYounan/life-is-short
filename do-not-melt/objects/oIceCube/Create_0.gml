@@ -12,16 +12,11 @@ grv = 10; // Pixels per seccond
 jump_speed = 440; // Pixels per seccond
 
 //shrink
+/*
 initialSize = 32
 size = initialSize;
 deathSize = 5;
 
-/*
-//GET RID
-meltOutsideBorder = 19;
-meltInsideBorder = 10;
-meltBorderDiff = ceil((meltOutsideBorder-meltInsideBorder)/2);
-*/
 
 meltBorder = 4;
 
@@ -30,7 +25,7 @@ initialDissappearTime = 30 //30 secco	nds
 
 sizeFrac = 0;
 lastSize = 32;
-
+*/
 
 // delta time is in microsecconds 1/1million
 #region Init

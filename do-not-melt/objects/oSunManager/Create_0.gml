@@ -24,7 +24,10 @@ intensityMeltTime = [20,15,10,6,2] //secconds for the bar
 
 barSecconds = intensityMeltTime[intensity]
 
-
+//Get Rid
+meltOutsideBorder = 19;
+meltInsideBorder = 10;
+meltBorderDiff = ceil((meltOutsideBorder-meltInsideBorder)/2);
 		
 //Create objects with scales
 sunIntensity = instance_create_layer(0 ,0,uiLayer,oSunIntensity);
@@ -40,7 +43,5 @@ with(sunMeltBar){
 	baseX = 64;
 	baseY = 2944;
 	baseXScale = 2.420898;
-	baseYScale = 1.796875;
-			
-			
+	baseYScale = 1.796875;		
 }

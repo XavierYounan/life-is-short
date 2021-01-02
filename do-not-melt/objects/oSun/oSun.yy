@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSun",
-    "path": "sprites/sSun/sSun.yy",
+    "name": "sSunInterior",
+    "path": "sprites/sSunInterior/sSunInterior.yy",
   },
   "solid": false,
   "visible": true,

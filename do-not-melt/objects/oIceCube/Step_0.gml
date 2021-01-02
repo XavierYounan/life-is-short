@@ -40,31 +40,8 @@ while (accumulator >= fixedTimestep){
 		image_xscale = sizeRatio;
 		image_yscale = sizeRatio;
 		lastSize = size;
-		
-		/*
-		//GET RID
-		for(var i=0; i<meltOutsideBorder;i++){
-		for(var j=0; j<meltOutsideBorder;j++){
-			
-		//Check compatiable 
-		if((i <= meltBorderDiff) || (i >= meltOutsideBorder-meltBorderDiff) ||  (j<= meltBorderDiff) || (j > meltOutsideBorder - meltBorderDiff)){
-
-			var xx = x - meltOutsideBorder/2 + i;
-			var yy = y - meltOutsideBorder/2 + j;
-			
-			with(oWaterParticleManger){
-				if(waterCells[xx][yy] = waterType.air){
-					var ls = ds_list_create()
-					ds_list_add(ls,xx,yy)
 	
-					waterCells[xx][yy] = ls;
-					water[waterLength] = ls;
-					waterLength++;
-				} //else add pressure at locatio
-			}
-		}}}
-		*/
-		
+		//Check compatiable 
 
 		//Check if not too small
 		if(size < deathSize){
@@ -74,9 +51,8 @@ while (accumulator >= fixedTimestep){
 			}	
 		}
 	}
+	*/
 	#endregion
-	
-	
 	
 	//Move x and y and then write to currentPositon 
 	#region movement
@@ -197,8 +173,7 @@ while (accumulator >= fixedTimestep){
 	#endregion
 
 	#region shrink
-	
-	size -= fixedTimestepS * shrinkRate //Apply this frames shrink amount
+	//size -= fixedTimestepS * shrinkRate //Apply this frames shrink amount
 	#endregion
 	#endregion	
 }
@@ -209,10 +184,8 @@ renderPosition.Lerp(previousPosition, currentPosition, alpha);
 x = renderPosition.x;
 y = renderPosition.y;
 
-
-
-
 #endregion
+
 #endregion
 
 #region Normal Timestep (use global.dt_Steady)
