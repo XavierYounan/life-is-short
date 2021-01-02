@@ -1,4 +1,6 @@
 percent = 0;
-barWidth = 2020;
-barXOrigin = 15;
-barYOrigin = 11;
+healthbarBlue = make_color_rgb(20,137,255)
+
+innerBarGap = 15; //Pixels
+spriteWidth = 2048;
+spriteHeight = 128;

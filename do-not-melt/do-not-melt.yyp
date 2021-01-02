@@ -31,7 +31,6 @@
     {"id":{"name":"Respawn","path":"scripts/Respawn/Respawn.yy",},"order":0,},
     {"id":{"name":"sentry_result_cancel","path":"scripts/sentry_result_cancel/sentry_result_cancel.yy",},"order":4,},
     {"id":{"name":"sSunIntensity","path":"sprites/sSunIntensity/sSunIntensity.yy",},"order":1,},
-    {"id":{"name":"sMeltBar","path":"sprites/sMeltBar/sMeltBar.yy",},"order":0,},
     {"id":{"name":"sTree","path":"sprites/sTree/sTree.yy",},"order":0,},
     {"id":{"name":"sentry_uuid4_string","path":"scripts/sentry_uuid4_string/sentry_uuid4_string.yy",},"order":6,},
     {"id":{"name":"sentry_handler","path":"objects/sentry_handler/sentry_handler.yy",},"order":0,},
