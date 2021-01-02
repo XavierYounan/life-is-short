@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSun",
-    "path": "sprites/sSun/sSun.yy",
+    "name": "sSunInterior",
+    "path": "sprites/sSunInterior/sSunInterior.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Sun",
-    "path": "folders/Sun.yy",
+    "path": "folders/Sun/UI/Sun.yy",
   },
   "resourceVersion": "1.0",
   "name": "oSun",

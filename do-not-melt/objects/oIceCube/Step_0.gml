@@ -8,7 +8,7 @@ key_left = keyboard_check(ord("A"));
 key_up = keyboard_check(ord("W"));
 //key_down = keyboard_check(vk_down);
 
-//shrink 
+//SHRINK
 //Calcuate ratio
 var curDissappearTime = initialDissappearTime - (initialDissappearTime-minDissapearTime) * oSun.ratio/100
 var shrinkRate = (initialSize-deathSize)/curDissappearTime// pixels per seccond
@@ -30,8 +30,31 @@ while (accumulator >= fixedTimestep){
 	accumulator -= fixedTimestep;
 
 	#region Physics simulation
-	//Move x and y and then write to currentPositon 
 	
+	#region Change oIceCube size
+	sizeFrac = ceil(size) - size; // Find amount needed to round size up
+	size += sizeFrac; //round size up
+
+	if(size != lastSize){
+		sizeRatio = size/initialSize;
+		image_xscale = sizeRatio;
+		image_yscale = sizeRatio;
+		lastSize = size;
+	
+		//Check compatiable 
+
+		//Check if not too small
+		if(size < deathSize){
+			instance_destroy(self);
+			with(oStart){
+				Respawn(camera);	
+			}	
+		}
+	}
+	*/
+	#endregion
+	
+	//Move x and y and then write to currentPositon 
 	#region movement
 	move = (key_right - key_left) * walksp
 	hsp = move;
@@ -150,8 +173,7 @@ while (accumulator >= fixedTimestep){
 	#endregion
 
 	#region shrink
-	
-	size -= fixedTimestepS * shrinkRate //Apply this frames shrink amount
+	//size -= fixedTimestepS * shrinkRate //Apply this frames shrink amount
 	#endregion
 	#endregion	
 }
@@ -162,47 +184,8 @@ renderPosition.Lerp(previousPosition, currentPosition, alpha);
 x = renderPosition.x;
 y = renderPosition.y;
 
-#region Change oIceCube size
-/*
-sizeRatio = size/initialSize;
-image_xscale = sizeRatio;
-image_yscale = sizeRatio;
-
-sizeFrac = ceil(size) - size; // Find amount needed to round size up
-size += sizeFrac; //round size up
-
-if(size != lastSize){
-	
-	lastSize = size;
-	
-	var xx = x;
-	var yy = y;
-
-	with(oWaterParticleManger){
-		if(waterCells[xx][yy] = waterType.air){
-			var ls = ds_list_create()
-			ds_list_add(ls,xx,yy,0)
-	
-			waterCells[xx][yy] = ls;
-			water[waterLength] = ls;
-			waterLength++;
-		} 
-	}
-	
-	
-	//Check if not too small
-	if(size < deathSize){
-		instance_destroy(self);
-		with(oStart){
-			Respawn(camera);	
-		}	
-	}
-}
-*/
 #endregion
 
-
-#endregion
 #endregion
 
 #region Normal Timestep (use global.dt_Steady)

@@ -2,6 +2,9 @@
 #macro DEBUGGING false
 #macro Debug:DEBUGGING true
 
+if(DEBUGGING == true){
+	show_debug_overlay(true)	
+}
 
 //setup
 if (!assert_singleton()) return;
@@ -61,6 +64,7 @@ if(!DEBUGGING){
 	if (file_exists(error_file)) {
 	    var buf = buffer_load(error_file);
 	    error_text = buffer_read(buf, buffer_string);
+		//Add an apology message here
 	    buffer_delete(buf);
 	    file_delete(error_file);
 		debug_log(error_text,ERROR_LEVEL.FATAL)

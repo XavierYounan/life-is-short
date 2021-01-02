@@ -1,4 +1,3 @@
- show_debug_overlay(true)
 tilemap = oIceCube.tilemap
 
 grv = 10;
@@ -20,11 +19,10 @@ waterLength = 0;
 
 lastDir = 1; //Last direction of water particle 0 is left 1 is right
 
-
 enum waterRef{
 	xx = 0,
 	yy = 1,
-	deactivated = 2 //for later
+	//deactivated = 2 //for later
 }
 
 //Add all the ground elements
