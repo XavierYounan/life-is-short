@@ -10,10 +10,11 @@ key_up = keyboard_check(ord("W"));
 
 //SHRINK
 //Calcuate ratio
+/*
 var curDissappearTime = initialDissappearTime - (initialDissappearTime-minDissapearTime) * oSun.ratio/100
 var shrinkRate = (initialSize-deathSize)/curDissappearTime// pixels per seccond
 size -= sizeFrac;//Re apply sizeFrac
-
+*/
 #endregion
 
 #region Physics Fixed Timestep
@@ -32,6 +33,7 @@ while (accumulator >= fixedTimestep){
 	#region Physics simulation
 	
 	#region Change oIceCube size
+	/*
 	sizeFrac = ceil(size) - size; // Find amount needed to round size up
 	size += sizeFrac; //round size up
 

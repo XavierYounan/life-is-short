@@ -1,8 +1,19 @@
-switch (expression) {
-    case constant:
-        // code here
-        break;
-    default:
-        // code here
-        break;
+if(intensity >= 1){
+	tri1Rot += 1 * tri1RotSpeed * rotSpeedModifier;
+	tri1Rot = tri1Rot >= 360 ? tri1Rot - 360 : tri1Rot;	
 }
+
+if(intensity >= 2){
+	tri2Rot += 2* tri1RotSpeed * rotSpeedModifier;
+	tri2Rot = tri2Rot >= 360 ? tri2Rot - 360 : tri2Rot;	
+}
+if(intensity >= 2.5){
+	tri3Rot += 3 * tri1RotSpeed * rotSpeedModifier;
+	tri3Rot = tri3Rot >= 360 ? tri3Rot - 360 : tri3Rot;
+}
+if(intensity >= 3){
+	tri4Rot += 4 * tri1RotSpeed * rotSpeedModifier;
+	tri4Rot = tri4Rot >= 360 ? tri4Rot - 360 : tri4Rot;
+}
+
+//Boost
