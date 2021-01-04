@@ -1,10 +1,35 @@
 if(keyboard_check_pressed(vk_space)){
+	
+	
 	intensity++ //Increment intensity
+	
+	//Run before intensity cap so it doesnt re do animation for case 4
+	switch(intensity){
+		case 1:
+			var t = TweenFire(sun,EaseOutCirc,0,true,0,1,"tri1Boost",0,2)
+			TweenAddCallback(t,TWEEN_EV_FINISH,id,BoostShrink,intensity)
+
+		break;
+		case 2:
+			var t = TweenFire(sun,EaseOutCirc,0,true,0,1,"tri2Boost",0,2)
+			TweenAddCallback(t,TWEEN_EV_FINISH,id,BoostShrink,intensity)
+		break;
+		case 3:
+			var t = TweenFire(sun,EaseOutCirc,0,true,0,1,"tri3Boost",0,2)
+			TweenAddCallback(t,TWEEN_EV_FINISH,id,BoostShrink,intensity)
+		break;
+		case 4:
+			var t = TweenFire(sun,EaseOutCirc,0,true,0,1,"tri4Boost",0,2)
+			TweenAddCallback(t,TWEEN_EV_FINISH,id,BoostShrink,intensity)
+		break;
+	}
+	
+	
 	intensity = min(intensity,4); //Cap Intensity at 4
 	sunIntensity.index = intensity; //Update the intensity indicator
 	sun.intensity = intensity;
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
-	
+
 	//Melt
 	var cubeX = oIceCube.x;
 	var cubeY = oIceCube.y;

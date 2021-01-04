@@ -22,3 +22,8 @@ tri4RotSpeed = 4;
 
 //Set the speed
 rotSpeedModifier = 0.5;
+
+tri1Boost = 1;
+tri2Boost = 1;
+tri3Boost = 1;
+tri4Boost = 1;
