@@ -45,3 +45,4 @@ with(sunMeltBar){
 	baseXScale = 2.420898;
 	baseYScale = 1.796875;		
 }
+

@@ -27,3 +27,4 @@ tri1Boost = 1;
 tri2Boost = 1;
 tri3Boost = 1;
 tri4Boost = 1;
+global.sunBoostMax = 1.5;
