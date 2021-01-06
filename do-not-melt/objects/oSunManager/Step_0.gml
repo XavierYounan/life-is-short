@@ -90,4 +90,7 @@ if(barSecconds <= 0){
 
 //Send the bar percent to the ui
 sunMeltBar.percent = barSecconds/intensityMeltTime[intensity];	
+
+//Set the lifespan bar to the desired time
+
 	

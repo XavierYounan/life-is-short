@@ -93,6 +93,7 @@
     {"id":{"name":"sentry_saved_delete","path":"scripts/sentry_saved_delete/sentry_saved_delete.yy",},"order":12,},
     {"id":{"name":"TweenEasyUseDelta","path":"scripts/TweenEasyUseDelta/TweenEasyUseDelta.yy",},"order":9,},
     {"id":{"name":"direction__","path":"scripts/direction__/direction__.yy",},"order":11,},
+    {"id":{"name":"oLifespanBar","path":"objects/oLifespanBar/oLifespanBar.yy",},"order":0,},
     {"id":{"name":"TweenDefine","path":"scripts/TweenDefine/TweenDefine.yy",},"order":1,},
     {"id":{"name":"sentry_datetime_string","path":"scripts/sentry_datetime_string/sentry_datetime_string.yy",},"order":1,},
     {"id":{"name":"TweenResume","path":"scripts/TweenResume/TweenResume.yy",},"order":3,},
@@ -153,6 +154,7 @@
     {"id":{"name":"TweenEventClear","path":"scripts/TweenEventClear/TweenEventClear.yy",},"order":2,},
     {"id":{"name":"EaseInOutCubic","path":"scripts/EaseInOutCubic/EaseInOutCubic.yy",},"order":9,},
     {"id":{"name":"__speed","path":"scripts/__speed/__speed.yy",},"order":7,},
+    {"id":{"name":"oLifespanBarManager","path":"objects/oLifespanBarManager/oLifespanBarManager.yy",},"order":1,},
     {"id":{"name":"SharedTweenerActivate","path":"scripts/SharedTweenerActivate/SharedTweenerActivate.yy",},"order":0,},
     {"id":{"name":"TGMS_EventUser","path":"scripts/TGMS_EventUser/TGMS_EventUser.yy",},"order":2,},
     {"id":{"name":"oDebug","path":"objects/oDebug/oDebug.yy",},"order":1,},
@@ -331,6 +333,7 @@
     {"folderPath":"folders/TweenGMS/scrip/Tweening/Tween Tools.yy","order":13,"resourceVersion":"1.0","name":"Tween Tools","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/TweenGMS/Extensions.yy","order":0,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/TweenGMS.yy","order":16,"resourceVersion":"1.0","name":"TweenGMS","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sun/UI/Health Bar.yy","order":3,"resourceVersion":"1.0","name":"Health Bar","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

@@ -46,3 +46,4 @@ with(sunMeltBar){
 	baseYScale = 1.796875;		
 }
 
+lifespanBar = instance_create_layer(0,0,uiLayer,oLifespanBarManager)
