@@ -29,7 +29,7 @@ if(keyboard_check_pressed(vk_space)){
 	sunIntensity.index = intensity; //Update the intensity indicator
 	sun.intensity = intensity;
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
-	lifespanBar.totalMelts -=1; //reduce the number of times current icecube can melt
+	lifespanBar.currentMelt -=1; //reduce the number of times current icecube can melt
 	
 
 	//Melt
@@ -64,7 +64,7 @@ barSecconds -= dt;
 
 if(barSecconds <= 0){
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
-	lifespanBar.totalMelts -=1; //reduce the number of times current icecube can melt
+	lifespanBar.currentMelt -=1; //reduce the number of times current icecube can melt
 	
 
 	//Melt
