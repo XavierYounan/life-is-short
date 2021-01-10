@@ -18,6 +18,9 @@ if(totalMelts > 0){
 
 	
 	var spacerWidth = (ww * spacerPercent)/(totalMelts-1);
+	var maxWidth = (ww * spacerPercent)/(minNum-1);
+	var spacerWidth = min(spacerWidth,maxWidth)
+	
 
 	var barXScale = barWidth/spriteWidth
 	var barYScale = hh/spriteHeight
