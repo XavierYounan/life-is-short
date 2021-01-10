@@ -14,10 +14,11 @@ var yy = hRatio * baseY;
 var barWidth = (ww * barPercent)/totalMelts;
 var spacerWidth = (ww * spacerPercent)/(totalMelts-1);
 
+totalLife = currentMelt * lifePerBar + currentPercent
 
 //Create each bar element
 for(var i=0;i<totalMelts;i++){
-	/*
+	
 	var bar = barElements[i];
 		
 	bar.x = xx + i * (barWidth + spacerWidth);
@@ -27,11 +28,11 @@ for(var i=0;i<totalMelts;i++){
 	bar.barHeight = hh;
 
 	bar.hlth = clamp(totalLife - i * lifePerBar,0,lifePerBar);
-	*/
 	
+	/*
 	var xxx = xx + i * (barWidth + spacerWidth);
 	var yyy = yy
 	
 	draw_rectangle(xxx,yyy,xxx + barWidth, yyy + hh,false)
-	
+	*/
 }

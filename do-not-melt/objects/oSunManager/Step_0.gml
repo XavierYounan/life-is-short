@@ -29,6 +29,8 @@ if(keyboard_check_pressed(vk_space)){
 	sunIntensity.index = intensity; //Update the intensity indicator
 	sun.intensity = intensity;
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
+	lifespanBar.totalMelts -=1; //reduce the number of times current icecube can melt
+	
 
 	//Melt
 	var cubeX = oIceCube.x;
@@ -62,6 +64,9 @@ barSecconds -= dt;
 
 if(barSecconds <= 0){
 	barSecconds = intensityMeltTime[intensity] //reset bar secconds
+	lifespanBar.totalMelts -=1; //reduce the number of times current icecube can melt
+	
+
 	//Melt
 	var cubeX = oIceCube.x;
 	var cubeY = oIceCube.y;
@@ -88,9 +93,9 @@ if(barSecconds <= 0){
 	}}}
 }
 
-//Send the bar percent to the ui
-sunMeltBar.percent = barSecconds/intensityMeltTime[intensity];	
 
-//Set the lifespan bar to the desired time
 
+var meltPercent = barSecconds/intensityMeltTime[intensity]
+sunMeltBar.percent = meltPercent;	//Send the bar percent to the ui
+lifespanBar.currentPercent = meltPercent * 100; //Set the lifespan bar to the desired time
 	
