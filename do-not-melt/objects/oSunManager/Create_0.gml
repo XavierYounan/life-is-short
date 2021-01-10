@@ -48,7 +48,7 @@ with(sunMeltBar){
 
 lifespanBar = instance_create_layer(0,0,uiLayer,oLifespanBarManager)
 with(lifespanBar){
-	totalMelts = 50;
+	totalMelts = 10;
 	currentMelt = totalMelts;
 	event_user(0)
 }

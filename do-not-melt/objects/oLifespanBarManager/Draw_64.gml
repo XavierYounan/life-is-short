@@ -12,6 +12,11 @@ if(totalMelts > 0){
 	var yy = hRatio * baseY;
 
 	var barWidth = (ww * barPercent)/totalMelts;
+	var maxWidth = (ww * barPercent)/minNum;
+	
+	var barWidth = min(barWidth,maxWidth)
+
+	
 	var spacerWidth = (ww * spacerPercent)/(totalMelts-1);
 
 	var barXScale = barWidth/spriteWidth
@@ -30,7 +35,7 @@ if(totalMelts > 0){
 		bar.xScale = barXScale
 		bar.yScale = barYScale
 
-		bar.hlth = clamp(totalLife - i * lifePerBar,0,lifePerBar);
+		bar.hlth = clamp(totalLife - (i+1) * lifePerBar,0,lifePerBar);
 	
 		/*
 		var xxx = xx + i * (barWidth + spacerWidth);

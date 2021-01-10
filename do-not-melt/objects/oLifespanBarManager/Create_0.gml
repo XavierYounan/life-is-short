@@ -10,9 +10,11 @@ barPercent = 1-spacerPercent
 lifePerBar = 100;
 currentMelt = 100;
 
-barRotationAmount = 10
+barRotationAmount = -10
 
 spriteWidth = 1000;
 spriteHeight = 1000;
 
 totalMelts = 0;
+
+minNum = 50
