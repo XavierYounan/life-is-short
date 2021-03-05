@@ -45,3 +45,10 @@ with(sunMeltBar){
 	baseXScale = 2.420898;
 	baseYScale = 1.796875;		
 }
+
+lifespanBar = instance_create_layer(0,0,uiLayer,oLifespanBarManager)
+with(lifespanBar){
+	totalMelts = 10;
+	currentMelt = totalMelts;
+	event_user(0)
+}

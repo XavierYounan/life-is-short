@@ -1,4 +1,7 @@
 {
+  "ConfigValues": {
+    "Debug": {"textureGroupId":"{\"name\":\"Default\",\"path\":\"texturegroups/Default\"}",},
+  },
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -25,9 +28,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":{"name":"4abf5832-e4fa-45b5-b6b4-b7c6b07b36c9","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":{"name":"sSunIntensity","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":{"name":"58e6a43c-331e-471d-baf1-e9af7e2bbcc6","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":{"name":"4abf5832-e4fa-45b5-b6b4-b7c6b07b36c9","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sSunIntensity","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"d3ac49a0-6ecf-4070-9d0a-6fd045811d80","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"5bbe8bf4-6754-426b-9f52-52044b179814","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5bbe8bf4-6754-426b-9f52-52044b179814","path":"sprites/sSunIntensity/sSunIntensity.yy",},"LayerId":{"name":"58e6a43c-331e-471d-baf1-e9af7e2bbcc6","path":"sprites/sSunIntensity/sSunIntensity.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
