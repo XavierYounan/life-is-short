@@ -1,4 +1,4 @@
-`if(totalMelts > 0){
+if(totalMelts > 0){
 	var hh = display_get_gui_height()
 	var ww = display_get_gui_width()
 

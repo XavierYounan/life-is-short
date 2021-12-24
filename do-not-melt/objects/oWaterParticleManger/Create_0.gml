@@ -55,7 +55,10 @@ for(var xx=0; xx<roomWidth; xx++){
 }
 
 waterTransparency = 0.8;
-display = 1;
+display = 1
 deactivateFrames = 30;//lower is better (but not too low)
 
+
+//disable drawing to the activation screen
+//application_surface_draw_enable(false)
 

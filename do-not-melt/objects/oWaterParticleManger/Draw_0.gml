@@ -1,3 +1,5 @@
+
+
 if(display){
 	draw_set_alpha(waterTransparency)
 	for(var i=0; i<waterLength; i++){
@@ -8,3 +10,19 @@ if(display){
 	}
 	draw_set_alpha(1);
 }
+
+/*
+variables to pass thorugh to shader
+
+waterTransparency
+waterarray (vec2) integers 
+
+
+/*
+
+shader_set(waterShader)
+
+draw_surface(application_surface,0,0)
+shader_reset()
+
+*/
