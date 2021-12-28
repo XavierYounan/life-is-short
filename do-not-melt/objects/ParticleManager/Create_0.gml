@@ -1,4 +1,4 @@
-physics_particle_set_radius(4);
+physics_particle_set_radius(3);
 physics_particle_set_density(0.5);
 
 

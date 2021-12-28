@@ -11,6 +11,8 @@ if(display){
 	draw_set_alpha(1);
 }
 
+
+
 /*
 variables to pass thorugh to shader
 

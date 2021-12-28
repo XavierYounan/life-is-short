@@ -53,6 +53,7 @@ if(keyboard_check_pressed(vk_space)){
 				waterCells[xx][yy] = ls;
 				water[waterLength] = ls;
 				waterLength++;
+				particleCount += 1
 			} //else add pressure at locatio
 		}
 	}}}	

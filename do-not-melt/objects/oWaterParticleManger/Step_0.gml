@@ -87,3 +87,5 @@ for(var i=0; i<waterLength; i++){ //For each water particle
 	}
 } 
 */
+
+debug_log("Particle Count is : " + string(particleCount), ERROR_LEVEL.DEBUG)

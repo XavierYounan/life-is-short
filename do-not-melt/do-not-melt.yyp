@@ -281,12 +281,12 @@
     ],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"testR","path":"rooms/testR/testR.yy",},},
     {"roomId":{"name":"rInit","path":"rooms/rInit/rInit.yy",},},
     {"roomId":{"name":"rWelcome","path":"rooms/rWelcome/rWelcome.yy",},},
     {"roomId":{"name":"rUiDesign","path":"rooms/rUiDesign/rUiDesign.yy",},},
     {"roomId":{"name":"rLevelSelect","path":"rooms/rLevelSelect/rLevelSelect.yy",},},
     {"roomId":{"name":"rBookSelect","path":"rooms/rBookSelect/rBookSelect.yy",},},
+    {"roomId":{"name":"testR","path":"rooms/testR/testR.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Rooms.yy","order":2,"resourceVersion":"1.0","name":"Rooms","tags":[],"resourceType":"GMFolder",},

@@ -1,3 +1,5 @@
+particleCount = 0
+
 tilemap = oIceCube.tilemap
 
 grv = 10;
