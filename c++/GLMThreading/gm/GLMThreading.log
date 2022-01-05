@@ -1,0 +1,2 @@
+﻿     Creating library C:\Coding\Repos\life-is-short\c++\GLMThreading\gm\GLMThreading.lib and object C:\Coding\Repos\life-is-short\c++\GLMThreading\gm\GLMThreading.exp
+LINK : fatal error LNK1561: entry point must be defined

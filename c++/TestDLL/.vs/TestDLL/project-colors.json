@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b8476f1c-3349-4df0-b47a-c99aefcf9d78": {
+      "ProjectGuid": "b8476f1c-3349-4df0-b47a-c99aefcf9d78",
+      "DisplayName": "TestDLL",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

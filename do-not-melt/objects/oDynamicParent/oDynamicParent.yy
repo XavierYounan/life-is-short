@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "do-not-melt",
-    "path": "do-not-melt.yyp",
+    "name": "WaterTest",
+    "path": "folders/WaterTest.yy",
   },
   "resourceVersion": "1.0",
   "name": "oDynamicParent",

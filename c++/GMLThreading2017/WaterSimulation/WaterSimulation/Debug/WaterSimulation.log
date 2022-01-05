@@ -1,0 +1,23 @@
+﻿  Source.cpp
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(88): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(89): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(90): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(92): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(93): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(94): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=uint32_t
+          ]
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(105): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(106): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(107): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(109): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(110): warning C4244: 'argument': conversion from 'double' to 'const unsigned int', possible loss of data
+c:\coding\repos\life-is-short\c++\gmlthreading2017\watersimulation\watersimulation\source.cpp(111): warning C4244: 'argument': conversion from 'double' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=uint32_t
+          ]
+     Creating library C:\Coding\Repos\life-is-short\c++\GMLThreading2017\WaterSimulation\Debug\WaterSimulation.lib and object C:\Coding\Repos\life-is-short\c++\GMLThreading2017\WaterSimulation\Debug\WaterSimulation.exp
+  WaterSimulation.vcxproj -> C:\Coding\Repos\life-is-short\c++\GMLThreading2017\WaterSimulation\Debug\WaterSimulation.dll
